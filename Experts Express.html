@@ -53,39 +53,39 @@
 </head>
 <body class="bg-white">
 
-<!-- header start -->
-  <header class="w-full select-none">
+
+  <header class="w-100 select-none">
     <!-- Top bar -->
     <div
-      class="bg-[#001f7f] flex items-center justify-between px-4 sm:px-6 md:px-10 lg:px-16 h-16">
-      <div class="text-yellow-400 font-extrabold text-2xl  leading-none">
+      class="bg-[#001f7f] flex items-center justify-between px-4 sm:px-6 md:px-10 lg:px-16 h-16"
+    >
+      <div class="text-yellow-400 font-extrabold text-2xl leading-none">
         Newjnest
       </div>
 
-      <div class="flex items-center space-x-0">
-        <form aria-label="Site search"
-        class="flex items-center w-full max-w-xl mx-10 mt-auto sm:mx-10 "
-        role="search">
-        <input
-          aria-label="Search input"
-          class="w-full rounded-l-md border border-gray-300 text-xs sm:text-sm px-15 py-1.5 focus:outline-none focus:ring-3 focus:ring-yellow-400"
-          placeholder="What are you looking for?"
-          type="text"
-        />
-        <button
-          aria-label="Search"
-          class="bg-white border border-l-0 border-gray-300 rounded-r-md px-3 py-1.5 flex items-center justify-center hover:bg-gray-100 transition"
-          type="submit"
-        >
-          <i class="fas fa-search text-gray-600 text-sm "></i>
-          <i class="fas fa-filter "></i>
 
-          <!-- <i class="fas fa-caret-down text-gray-600 text-xs ml-1"></i> -->
-        </button>
+      <div class="flex items-center space-x-3">
+        <form aria-label="Site search"
+        class="flex items-center w-auto max-w-auto mx-1 mt-auto sm:mx-2 my-auto"
+        role="search">
+        <div class="relative w-auto sm:w-[400px] ">
+          <input class="w-full rounded-sm text-[13px] py-1.5 pl-3 pr-12 text-black font-normal" placeholder="What are you looking for?" type="text"/>
+       
+          <button aria-label="Filter" class="absolute right-1 top-1.5 text-black text-sm gap-0 mx-1 ">
+           <i class="fas fa-filter">
+           </i>
+          </button>
+             <button aria-label="Search" class="absolute right-7 top-1.5 text-black text-sm">
+           <i class="fas fa-search">
+           </i>
+          </button>
+         </div>
+
       </form>
+
         <button
           aria-label="Select country"
-          class="flex items-center border border-gray-300 rounded bg-white px-2 py-1 mx-auto my-auto  hover:bg-gray-100 transition"
+          class="flex items-center border border-gray-300 rounded bg-white px-2 py-1 my-auto  hover:bg-gray-100 transition "
         >
           <img
             alt="Indian flag placeholder with orange, white and green horizontal stripes and blue chakra in center"
@@ -98,8 +98,7 @@
         </button>
         <button
           aria-label="Toggle dark mode"
-          class="bg-black rounded px-3 py-1 flex items-center justify-center hover:bg-gray-800 transition mx-auto my-auto"
-        >
+          class="bg-black rounded px-3 py-1 flex items-center justify-center hover:bg-gray-800 transition  mx-10">
           <i class="fas fa-moon text-white text-sm"></i>
         </button>
       </div>
@@ -113,27 +112,25 @@
         href="index (7).html">Home</a>
       <a class="hover:underline hover:decoration-white" href="Stories.html">Stories</a>
       <a class="hover:underline hover:decoration-white" href="Funding Guide.html"
-        >Govt. Schemes</a>
+        >Funding Guide</a>
       <a class="hover:underline hover:decoration-white" href="Govt. Schemes.html">Govt. Schemes</a>
-      <a class="hover:underline hover:decoration-white"  href="Legal Advice.html">Legal Advice</a>
+      <a class="hover:underline hover:decoration-white" href="Legal Advice.html">Legal Advice</a>
       <a class="text-yellow-400 font-semibold hover:underline hover:decoration-yellow-400" href="Experts Express.html">Experts Express</a>
     </nav>
   </header>
 
-<!-- start main -->
-
-
-
 
 
  <!--  start main  -->
- <main class="max-w-[1200px] mx-auto mt-10">
-    <div class=" px-4 py-8">
+ <main class="max-w-[1200px] mx-auto">
+  <br>
+    <div class=" px-4 py-8 mt-12 mb-12">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-          <h1 class="text-black  text-[35px] font-bold md:flex-1">
-            Get Expert Legal Advice for Your Startup</br> Journey</h1>
+          <h1 class="text-black text-[36px] font-bold md:flex-1">
+            Real Advice from the People Who've Been <br>
+            There.</h1>
        
-        <div class="relative inline-block text-left mx-5 mt-4 sm:mt-0">
+        <div class="relative inline-block text-left mx-0 mt-4 sm:mt-0">
             <button aria-expanded="true" aria-haspopup="true" aria-label="Filter" class="inline-flex justify-center w-16 rounded border border-gray-300 px-3 py-1 text-[12px] font-normal text-black hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-yellow-400" id="filter-menu-button" type="button">
               Filter
               <svg class="filter-icon mx-auto my-auto" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -157,14 +154,10 @@
            </div>
         </div>
 
-
-
-
-        
         <!-- section 2 -->
         <div class="mt-6 flex flex-col md:flex-row md:items-start md:gap-5">
-          <div class="md:flex-1 relative rounded-md overflow-hidden max-w-[720px]">
-            <img alt="Blue globe icon representing startup news" class="w-full h-[430px]  rounded-sm object-cover flex-shrink-0 shadow-sm" height="80" src="https://storage.googleapis.com/a1aa/image/cf75df8f-ed43-43d4-5421-a172479621a1.jpg" width="600"/>
+          <div class="md:flex-1 relative rounded-md overflow-hidden max-w-[820px]">
+            <img alt="Blue globe icon representing startup news" class="w-full h-[460px]  rounded-sm object-cover flex-shrink-0 shadow-sm" height="80" src="https://storage.googleapis.com/a1aa/image/cf75df8f-ed43-43d4-5421-a172479621a1.jpg" width="600"/>
      
             <div
             class="absolute bottom-6 left-6"
@@ -178,13 +171,12 @@
               class="bg-gradient-to-b from-yellow-300 to-yellow-400 text-black text-[16px] w-[300px] font-semibold rounded px-4 py-2 shadow-md hover:brightness-110 transition"
               type="button"
             >
-            Browse Expert Stories
-          </button>
+            Browse Expert Stories        </button>
           </div>
           </div>
     
-          <aside class=" w-full md:w-[400px] bg-white border border-gray-200 rounded-md p-4 shadow-sm">
-            <h2 class="text-black font-semibold text-[16px] mb-1 border-b border-gray-300 pb-1">
+          <aside class=" w-full md:w-[400px] bg-white border border-gray-200 rounded-md p-4 shadow-sm px-7">
+            <h2 class="text-black font-bold text-[18px] mb-3 border-b-2 border-black pb-0">
              Stay Connected
             </h2>
             <div class="grid grid-cols-2 gap-2 mb-4">
@@ -226,7 +218,7 @@
              </a>
             </div>
             <div class="relative overflow-hidden rounded-md">
-             <img alt="Plate of food on a table with garnish, representing an advertisement" class="w-[400px] h-[200px] object-cover" height="180" src="https://storage.googleapis.com/a1aa/image/55353739-040e-4717-c6ed-e6e4cf4f7358.jpg" width="288"/>
+             <img alt="Plate of food on a table with garnish, representing an advertisement" class="w-[400px] h-[220px] object-cover" height="180" src="https://storage.googleapis.com/a1aa/image/55353739-040e-4717-c6ed-e6e4cf4f7358.jpg" width="288"/>
              <div class="absolute inset-0 flex items-center justify-center text-white font-semibold text-lg pointer-events-none select-none bg-black bg-opacity-30">
               Ad
              </div>
@@ -234,7 +226,6 @@
            </aside>
         </div>
       </div>
-
         <br>
         <p>“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
             eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
@@ -245,12 +236,12 @@
               voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?”</p>
       </div>
 <br>
-
+<br>
 
 <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-10">
     <!-- Featured Expert Opinion Section -->
     <section class="mb-16">
-     <h2 class="text-black text-[30px] font-semibold mb-6">
+     <h2 class="text-black text-[36px] font-semibold mb-6">
       Featured Expert Opinion
      </h2>
      <div class="flex flex-col md:flex-row md:items-center md:space-x-8">
@@ -274,14 +265,15 @@
      </div>
     </section>
    </div>
+  </main>
 
-   <div class="bg-[#F5F5F5]  p-6">
-    <div class=" mx-auto">
-     <section>
-      <h2 class="text-black font-bold text-[30px] mb-6">
+  <div class="bg-gray-100">
+    <div class="max-w-[1200px] mx-auto ">
+     <section >
+      <h2 class="text-black font-bold text-[36px] mmb-6">
        Expert Articles
       </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
        <article class="bg-white border border-gray-200 max-w-xs">
         <img alt="Man wearing glasses and a cap reading a newspaper in a warm lit room with papers on table" class="w-full object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/29b3e38f-88ba-4881-5d23-0b1c94fe9637.jpg" width="320"/>
         <div class="p-3">
@@ -335,14 +327,16 @@
        </article>
       </div>
      </section>
+     <br>
+     <br>
+
     </div>
 </div>
-<br>
 
 
-<div class="bg-[#F5F5F5]  flex justify-center items-start py-10 px-4">
+<div class="max-w-[1200px] mx-auto  flex justify-center items-start py-10 ">
     <div class="bg-white w-full  p-8">
-      <h2 class="font-bold text-[30px] mb-2">FQA</h2>
+      <h2 class="font-bold text-[36px] mb-2">FQA</h2>
       <h3 class="font-extrabold text-[30px] mb-1.5">Got Questions? We've Got Answers!</h3>
       <p class="text-[20px] text-gray-700 mb-6 max-w-full">
         Explore quick answers to common doubts about expert advice, contributions, and more.
@@ -372,12 +366,7 @@
       </section>
     </div>
     </div>
-  
-
-
-    
-
-</main>
+    <br>
 
       <!-- start footer -->
       <footer class="bg-black relative">

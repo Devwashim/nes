@@ -52,39 +52,39 @@
 </head>
 <body class="bg-white">
 
-<!-- header start -->
-  <header class="w-full select-none">
+
+  <header class="w-100 select-none">
     <!-- Top bar -->
     <div
-      class="bg-[#001f7f] flex items-center justify-between px-4 sm:px-6 md:px-10 lg:px-16 h-16">
-      <div class="text-yellow-400 font-extrabold text-2xl  leading-none">
+      class="bg-[#001f7f] flex items-center justify-between px-4 sm:px-6 md:px-10 lg:px-16 h-16"
+    >
+      <div class="text-yellow-400 font-extrabold text-2xl leading-none">
         Newjnest
       </div>
 
-      <div class="flex items-center space-x-0">
-        <form aria-label="Site search"
-        class="flex items-center w-full max-w-xl mx-10 mt-auto sm:mx-10 "
-        role="search">
-        <input
-          aria-label="Search input"
-          class="w-full rounded-l-md border border-gray-300 text-xs sm:text-sm px-15 py-1.5 focus:outline-none focus:ring-3 focus:ring-yellow-400"
-          placeholder="What are you looking for?"
-          type="text"
-        />
-        <button
-          aria-label="Search"
-          class="bg-white border border-l-0 border-gray-300 rounded-r-md px-3 py-1.5 flex items-center justify-center hover:bg-gray-100 transition"
-          type="submit"
-        >
-          <i class="fas fa-search text-gray-600 text-sm "></i>
-          <i class="fas fa-filter "></i>
 
-          <!-- <i class="fas fa-caret-down text-gray-600 text-xs ml-1"></i> -->
-        </button>
+      <div class="flex items-center space-x-3">
+        <form aria-label="Site search"
+        class="flex items-center w-auto max-w-auto mx-1 mt-auto sm:mx-2 my-auto"
+        role="search">
+        <div class="relative w-auto sm:w-[400px] ">
+          <input class="w-full rounded-sm text-[13px] py-1.5 pl-3 pr-12 text-black font-normal" placeholder="What are you looking for?" type="text"/>
+       
+          <button aria-label="Filter" class="absolute right-1 top-1.5 text-black text-sm gap-0 mx-1 ">
+           <i class="fas fa-filter">
+           </i>
+          </button>
+             <button aria-label="Search" class="absolute right-7 top-1.5 text-black text-sm">
+           <i class="fas fa-search">
+           </i>
+          </button>
+         </div>
+
       </form>
+
         <button
           aria-label="Select country"
-          class="flex items-center border border-gray-300 rounded bg-white px-2 py-1 mx-auto my-auto  hover:bg-gray-100 transition"
+          class="flex items-center border border-gray-300 rounded bg-white px-2 py-1 my-auto  hover:bg-gray-100 transition "
         >
           <img
             alt="Indian flag placeholder with orange, white and green horizontal stripes and blue chakra in center"
@@ -97,8 +97,7 @@
         </button>
         <button
           aria-label="Toggle dark mode"
-          class="bg-black rounded px-3 py-1 flex items-center justify-center hover:bg-gray-800 transition mx-auto my-auto"
-        >
+          class="bg-black rounded px-3 py-1 flex items-center justify-center hover:bg-gray-800 transition  mx-10">
           <i class="fas fa-moon text-white text-sm"></i>
         </button>
       </div>
@@ -114,20 +113,23 @@
       <a class="hover:underline hover:decoration-white" href="Funding Guide.html"
         >Funding Guide</a>
       <a class="hover:underline hover:decoration-white" href="Govt. Schemes.html">Govt. Schemes</a>
-      <a class="text-yellow-400 font-semibold hover:underline hover:decoration-yellow-400"  href="Legal Advice.html">Legal Advice</a>
+      <a class="text-yellow-400 font-semibold hover:underline hover:decoration-yellow-400" href="Legal Advice.html">Legal Advice</a>
       <a class="hover:underline hover:decoration-white" href="Experts Express.html">Experts Express</a>
     </nav>
   </header>
 
 
+
  <!--  start main  -->
- <main class="max-w-[1200px] mx-auto mt-10">
-    <div class=" px-4 py-8">
+ <main class="max-w-[1200px] mx-auto">
+  <br>
+    <div class=" px-4 py-8 mt-12 mb-12">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-          <h1 class="text-black  text-[35px] font-bold md:flex-1">
-            Get Expert Legal Advice for Your Startup</br> Journey</h1>
+          <h1 class="text-black text-[36px] font-bold md:flex-1">
+            Get Expert Legal Advice for Your Startup <br>
+            Journey</h1>
        
-        <div class="relative inline-block text-left mx-5 mt-4 sm:mt-0">
+        <div class="relative inline-block text-left mx-0 mt-4 sm:mt-0">
             <button aria-expanded="true" aria-haspopup="true" aria-label="Filter" class="inline-flex justify-center w-16 rounded border border-gray-300 px-3 py-1 text-[12px] font-normal text-black hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-yellow-400" id="filter-menu-button" type="button">
               Filter
               <svg class="filter-icon mx-auto my-auto" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -151,11 +153,10 @@
            </div>
         </div>
 
-        
         <!-- section 2 -->
         <div class="mt-6 flex flex-col md:flex-row md:items-start md:gap-5">
-          <div class="md:flex-1 relative rounded-md overflow-hidden max-w-[720px]">
-            <img alt="Blue globe icon representing startup news" class="w-full h-[430px]  rounded-sm object-cover flex-shrink-0 shadow-sm" height="80" src="https://storage.googleapis.com/a1aa/image/cf75df8f-ed43-43d4-5421-a172479621a1.jpg" width="600"/>
+          <div class="md:flex-1 relative rounded-md overflow-hidden max-w-[820px]">
+            <img alt="Blue globe icon representing startup news" class="w-full h-[460px]  rounded-sm object-cover flex-shrink-0 shadow-sm" height="80" src="https://storage.googleapis.com/a1aa/image/cf75df8f-ed43-43d4-5421-a172479621a1.jpg" width="600"/>
      
             <div
             class="absolute bottom-6 left-6"
@@ -163,19 +164,18 @@
             <h2
               class="text-white font-bold text-[25px] leading-tight mb-1 drop-shadow-[0_0_3px_rgba(0,0,0,0.8)] mb-7"
             >
-            Hear from startup founders, investors, legal experts, and business mentors — curated just for your entrepreneurial journey.</h2>
+            Hear from startup founders, investors, legal experts, and business mentors — curated just for your entrepreneurial journey.          </h2>
         
             <button
               class="bg-gradient-to-b from-yellow-300 to-yellow-400 text-black text-[16px] w-[300px] font-semibold rounded px-4 py-2 shadow-md hover:brightness-110 transition"
               type="button"
             >
-            Browse Expert Stories        
-        </button>
+            Browse Expert Stories        </button>
           </div>
           </div>
     
-          <aside class=" w-full md:w-[400px] bg-white border border-gray-200 rounded-md p-4 shadow-sm">
-            <h2 class="text-black font-semibold text-[16px] mb-1 border-b border-gray-300 pb-1">
+          <aside class=" w-full md:w-[400px] bg-white border border-gray-200 rounded-md p-4 shadow-sm px-7">
+            <h2 class="text-black font-bold text-[18px] mb-3 border-b-2 border-black pb-0">
              Stay Connected
             </h2>
             <div class="grid grid-cols-2 gap-2 mb-4">
@@ -217,7 +217,7 @@
              </a>
             </div>
             <div class="relative overflow-hidden rounded-md">
-             <img alt="Plate of food on a table with garnish, representing an advertisement" class="w-[400px] h-[200px] object-cover" height="180" src="https://storage.googleapis.com/a1aa/image/55353739-040e-4717-c6ed-e6e4cf4f7358.jpg" width="288"/>
+             <img alt="Plate of food on a table with garnish, representing an advertisement" class="w-[400px] h-[220px] object-cover" height="180" src="https://storage.googleapis.com/a1aa/image/55353739-040e-4717-c6ed-e6e4cf4f7358.jpg" width="288"/>
              <div class="absolute inset-0 flex items-center justify-center text-white font-semibold text-lg pointer-events-none select-none bg-black bg-opacity-30">
               Ad
              </div>
@@ -225,7 +225,7 @@
            </aside>
         </div>
       </div>
-        <br>
+
         <p>“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
             eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
              voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
@@ -238,7 +238,7 @@
 
 
       <div class="max-w-[1200px] mx-auto px-4 py-10">
-        <h2 class="font-bold text-[30px] mb-8">Popular Legal Topics</h2>
+        <h2 class="font-bold text-[36px] mb-8">Popular Legal Topics</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- Startup Incorporation -->
           <div class="bg-gray-50 p-6">
@@ -254,7 +254,7 @@
               <li>Legal process simplified</li>
               <li>Choose the right structure</li>
             </ul>
-            <button class="bg-blue-700 text-white text-[15px] px-4 py-1 rounded float-right">
+            <button class="bg-blue-700 text-white text-[15px] px-4 py-1  float-right">
               Apply Now <i class="fas fa-arrow-right ml-1"></i>
             </button>
             <div class="clear-both"></div>
@@ -321,113 +321,111 @@
           </div>
         </div>
       </div>
+    </main>
 
-
-       
+  
   <!-- Latest Startup Stories -->
-  <div class=" w-full  mx-auto px-4 py-10 mt-5">
-    <h2 class="font-sans font-bold text-black text-[30px] mb-6">
-     Latest Startup Stories
-    </h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-     <article class="bg-white shadow-sm">
-      <img alt="World map showing red markers indicating startup locations" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/2efa6114-9e71-4889-5d24-5220c8c68591.jpg" width="300"/>
-      <div class="p-4">
-       <h3 class="font-sans font-semibold text-[17px] text-black leading-tight mb-1">
-        How This Startup Raised $1M in Just 3 Months!
-       </h3>
-       <p class="font-sans text-[15px] text-[#4B4B4B] mb-3 leading-tight">
-        A deep dive into the funding success of XYZ startup...
-       </p>
-       <button aria-label="Read More about How This Startup Raised $1M in Just 3 Months!" class="text-[15px] font-sans text-[#4B4B4B] border border-[#D9D9D9] rounded px-2 py-[2px] hover:bg-gray-100">
-        Read More
-       </button>
+  <div class="bg-gray-100  max-w-full mb-12">
+    <div class="max-w-7xl mx-auto px-12 py-10 mt-12">
+      <h2 class=" font-bold text-black text-[36px] mb-6">
+       Latest Startup Stories
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+       <article class="bg-white shadow-md">
+        <img alt="World map showing red markers indicating startup locations" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/2efa6114-9e71-4889-5d24-5220c8c68591.jpg" width="300"/>
+        <div class="p-4">
+         <h3 class="font-sans font-bold text-[18px] text-black leading-tight mb-1">
+          How This Startup Raised $1M in Just 3 Months!
+         </h3>
+         <p class="font-sans text-[16px] text-[#4B4B4B] mb-3 leading-tight">
+          A deep dive into the funding success of XYZ startup...
+         </p>
+         <button aria-label="Read More about How This Startup Raised $1M in Just 3 Months!" class="text-[13px]  font-sans text-[#4B4B4B] border border-[#D9D9D9]  px-6 py-[5px] hover:bg-gray-100">
+          Read More
+         </button>
+        </div>
+       </article>
+  
+       <article class="bg-white shadow-md">
+        <img alt="Startup team meeting in a modern office with whiteboard and casual seating" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/2000c13a-fdea-4190-6020-36b82259f826.jpg" width="300"/>
+        <div class="p-4">
+         <h3 class="font-sans font-bold text-[18px] text-black leading-tight mb-1">
+          How This Startup Raised $1M in Just 3 Months!
+         </h3>
+         <p class="font-sans text-[16px] text-[#4B4B4B] mb-3 leading-tight">
+          A deep dive into the funding success of XYZ startup...
+         </p>
+         <button aria-label="Read More about How This Startup Raised $1M in Just 3 Months!" class="text-[13px]   font-sans text-[#4B4B4B] border border-[#D9D9D9]  px-6 py-[5px] hover:bg-gray-100">
+          Read More
+         </button>
+        </div>
+       </article>
+       
+       <article class="bg-white shadow-md">
+        <img alt="Google search results page showing COVID-19 related information" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/19ad6b83-677d-4b94-8374-9a3f8a87cd7b.jpg" width="300"/>
+        <div class="p-4">
+         <h3 class="font-sans font-bold text-[18px] text-black leading-tight mb-1">
+          How This Startup Raised $1M in Just 3 Months!
+         </h3>
+         <p class="font-sans text-[16px] text-[#4B4B4B] mb-3 leading-tight">
+          A deep dive into the funding success of XYZ startup...
+         </p>
+         <button aria-label="Read More about How This Startup Raised $1M in Just 3 Months!" class="text-[13px] font-sans text-[#4B4B4B] border border-[#D9D9D9]   px-6 py-[5px] hover:bg-gray-100">
+          Read More
+         </button>
+        </div>
+       </article>
+  
+       <article class="bg-white shadow-md">
+        <img alt="World map showing red markers indicating startup locations" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/2efa6114-9e71-4889-5d24-5220c8c68591.jpg" width="300"/>
+        <div class="p-4">
+         <h3 class="font-sans font-bold text-[18px] text-black leading-tight mb-1">
+          How This Startup Raised $1M in Just 3 Months!
+         </h3>
+         <p class="font-sans text-[16px] text-[#4B4B4B] mb-3 leading-tight">
+          A deep dive into the funding success of XYZ startup...
+         </p>
+         <button aria-label="Read More about How This Startup Raised $1M in Just 3 Months!" class="text-[13px]   font-sans text-[#4B4B4B] border border-[#D9D9D9]  px-6 py-[5px] hover:bg-gray-100">
+          Read More
+         </button>
+        </div>
+       </article>
+       <article class="bg-white shadow-md">
+        <img alt="Startup team meeting in a modern office with whiteboard and casual seating" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/2000c13a-fdea-4190-6020-36b82259f826.jpg" width="300"/>
+        <div class="p-4">
+         <h3 class="font-sans font-bold text-[18px] text-black leading-tight mb-1">
+          How This Startup Raised $1M in Just 3 Months!
+         </h3>
+         <p class="font-sans text-[16PX] text-[#4B4B4B] mb-3 leading-tight">
+          A deep dive into the funding success of XYZ startup...
+         </p>
+         <button aria-label="Read More about How This Startup Raised $1M in Just 3 Months!" class="text-[13px]  font-sans text-[#4B4B4B] border border-[#D9D9D9]  px-6 py-[5px] hover:bg-gray-100">
+          Read More
+         </button>
+        </div>
+       </article>
+       <article class="bg-white shadow-md">
+        <img alt="Google search results page showing COVID-19 related information" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/19ad6b83-677d-4b94-8374-9a3f8a87cd7b.jpg" width="300"/>
+        <div class="p-4">
+         <h3 class="font-sans font-bold text-[18px] text-black leading-tight mb-1">
+          How This Startup Raised $1M in Just 3 Months!
+         </h3>
+         <p class="font-sans text-[16px] text-[#4B4B4B] mb-3 leading-tight">
+          A deep dive into the funding success of XYZ startup...
+         </p>
+         <button aria-label="Read More about How This Startup Raised $1M in Just 3 Months!" class="text-[13px] font-sans text-[#4B4B4B] border border-[#D9D9D9]  px-6 py-[5px] hover:bg-gray-100">
+          Read More
+         </button>
+        </div>
+       </article>
       </div>
-     </article>
-
-     <article class="bg-white shadow-sm">
-      <img alt="Startup team meeting in a modern office with whiteboard and casual seating" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/2000c13a-fdea-4190-6020-36b82259f826.jpg" width="300"/>
-      <div class="p-4">
-       <h3 class="font-sans font-semibold text-[17px] text-black leading-tight mb-1">
-        How This Startup Raised $1M in Just 3 Months!
-       </h3>
-       <p class="font-sans text-[15px] text-[#4B4B4B] mb-3 leading-tight">
-        A deep dive into the funding success of XYZ startup...
-       </p>
-       <button aria-label="Read More about How This Startup Raised $1M in Just 3 Months!" class="text-[15px] font-sans text-[#4B4B4B] border border-[#D9D9D9] rounded px-2 py-[2px] hover:bg-gray-100">
-        Read More
-       </button>
-      </div>
-     </article>
-     
-     <article class="bg-white shadow-sm">
-      <img alt="Google search results page showing COVID-19 related information" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/19ad6b83-677d-4b94-8374-9a3f8a87cd7b.jpg" width="300"/>
-      <div class="p-4">
-       <h3 class="font-sans font-semibold text-[17px] text-black leading-tight mb-1">
-        How This Startup Raised $1M in Just 3 Months!
-       </h3>
-       <p class="font-sans text-[15px] text-[#4B4B4B] mb-3 leading-tight">
-        A deep dive into the funding success of XYZ startup...
-       </p>
-       <button aria-label="Read More about How This Startup Raised $1M in Just 3 Months!" class="text-[15px] font-sans text-[#4B4B4B] border border-[#D9D9D9] rounded px-2 py-[2px] hover:bg-gray-100">
-        Read More
-       </button>
-      </div>
-     </article>
-
-     <article class="bg-white shadow-sm">
-      <img alt="World map showing red markers indicating startup locations" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/2efa6114-9e71-4889-5d24-5220c8c68591.jpg" width="300"/>
-      <div class="p-4">
-       <h3 class="font-sans font-semibold text-[17px] text-black leading-tight mb-1">
-        How This Startup Raised $1M in Just 3 Months!
-       </h3>
-       <p class="font-sans text-[15px] text-[#4B4B4B] mb-3 leading-tight">
-        A deep dive into the funding success of XYZ startup...
-       </p>
-       <button aria-label="Read More about How This Startup Raised $1M in Just 3 Months!" class="text-[15px] font-sans text-[#4B4B4B] border border-[#D9D9D9] rounded px-2 py-[2px] hover:bg-gray-100">
-        Read More
-       </button>
-      </div>
-     </article>
-     <article class="bg-white shadow-sm">
-      <img alt="Startup team meeting in a modern office with whiteboard and casual seating" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/2000c13a-fdea-4190-6020-36b82259f826.jpg" width="300"/>
-      <div class="p-4">
-       <h3 class="font-sans font-semibold text-[17px] text-black leading-tight mb-1">
-        How This Startup Raised $1M in Just 3 Months!
-       </h3>
-       <p class="font-sans text-[15px] text-[#4B4B4B] mb-3 leading-tight">
-        A deep dive into the funding success of XYZ startup...
-       </p>
-       <button aria-label="Read More about How This Startup Raised $1M in Just 3 Months!" class="text-[15px] font-sans text-[#4B4B4B] border border-[#D9D9D9] rounded px-2 py-[2px] hover:bg-gray-100">
-        Read More
-       </button>
-      </div>
-     </article>
-     <article class="bg-white shadow-sm">
-      <img alt="Google search results page showing COVID-19 related information" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/19ad6b83-677d-4b94-8374-9a3f8a87cd7b.jpg" width="300"/>
-      <div class="p-4">
-       <h3 class="font-sans font-semibold text-[17px] text-black leading-tight mb-1">
-        How This Startup Raised $1M in Just 3 Months!
-       </h3>
-       <p class="font-sans text-[15px] text-[#4B4B4B] mb-3 leading-tight">
-        A deep dive into the funding success of XYZ startup...
-       </p>
-       <button aria-label="Read More about How This Startup Raised $1M in Just 3 Months!" class="text-[15px] font-sans text-[#4B4B4B] border border-[#D9D9D9] rounded px-2 py-[2px] hover:bg-gray-100">
-        Read More
-       </button>
-      </div>
-     </article>
+     </div>
     </div>
-   </div>
-
-
-
-
-
-
-
+    </div>
+<br>  
    <!-- <div class="bg-[#F5F5F5] min-h-screen flex justify-center py-10 px-4"> -->
-    <div class="bg-white max-w-[1200px] w-full rounded border border-gray-300 p-6">
+    
+  <div class="bg-white max-w-[1200px] mx-auto w-full rounded border border-gray-300 p-6 ">
      <!-- Comment Input Section -->
      <form class="flex items-start space-x-4 mb-10">
       <img alt="User avatar, round face with short hair, 40x40 pixels" class="w-10 h-10 rounded-full flex-shrink-0" height="40" src="https://storage.googleapis.com/a1aa/image/6efe2eea-a7ec-4e1c-4cac-76784de6fba5.jpg" width="40"/>
@@ -483,12 +481,9 @@
       </div>
      </article>
     </div>
-<!-- </div> -->
 <br>
- </main>
- <br>
- <br>
-
+<br>
+<br>
 
 
 

@@ -52,39 +52,39 @@
 </head>
 <body class="bg-white">
 
-<!-- header start -->
-  <header class="w-full select-none">
+
+  <header class="w-100 select-none">
     <!-- Top bar -->
     <div
-      class="bg-[#001f7f] flex items-center justify-between px-4 sm:px-6 md:px-10 lg:px-16 h-16">
-      <div class="text-yellow-400 font-extrabold text-2xl  leading-none">
+      class="bg-[#001f7f] flex items-center justify-between px-4 sm:px-6 md:px-10 lg:px-16 h-16"
+    >
+      <div class="text-yellow-400 font-extrabold text-2xl leading-none">
         Newjnest
       </div>
 
-      <div class="flex items-center space-x-0">
-        <form aria-label="Site search"
-        class="flex items-center w-full max-w-xl mx-10 mt-auto sm:mx-10 "
-        role="search">
-        <input
-          aria-label="Search input"
-          class="w-full rounded-l-md border border-gray-300 text-xs sm:text-sm px-15 py-1.5 focus:outline-none focus:ring-3 focus:ring-yellow-400"
-          placeholder="What are you looking for?"
-          type="text"
-        />
-        <button
-          aria-label="Search"
-          class="bg-white border border-l-0 border-gray-300 rounded-r-md px-3 py-1.5 flex items-center justify-center hover:bg-gray-100 transition"
-          type="submit"
-        >
-          <i class="fas fa-search text-gray-600 text-sm "></i>
-          <i class="fas fa-filter "></i>
 
-          <!-- <i class="fas fa-caret-down text-gray-600 text-xs ml-1"></i> -->
-        </button>
+      <div class="flex items-center space-x-3">
+        <form aria-label="Site search"
+        class="flex items-center w-auto max-w-auto mx-1 mt-auto sm:mx-2 my-auto"
+        role="search">
+        <div class="relative w-auto sm:w-[400px] ">
+          <input class="w-full rounded-sm text-[13px] py-1.5 pl-3 pr-12 text-black font-normal" placeholder="What are you looking for?" type="text"/>
+       
+          <button aria-label="Filter" class="absolute right-1 top-1.5 text-black text-sm gap-0 mx-1 ">
+           <i class="fas fa-filter">
+           </i>
+          </button>
+             <button aria-label="Search" class="absolute right-7 top-1.5 text-black text-sm">
+           <i class="fas fa-search">
+           </i>
+          </button>
+         </div>
+
       </form>
+
         <button
           aria-label="Select country"
-          class="flex items-center border border-gray-300 rounded bg-white px-2 py-1 mx-auto my-auto  hover:bg-gray-100 transition"
+          class="flex items-center border border-gray-300 rounded bg-white px-2 py-1 my-auto  hover:bg-gray-100 transition "
         >
           <img
             alt="Indian flag placeholder with orange, white and green horizontal stripes and blue chakra in center"
@@ -97,8 +97,7 @@
         </button>
         <button
           aria-label="Toggle dark mode"
-          class="bg-black rounded px-3 py-1 flex items-center justify-center hover:bg-gray-800 transition mx-auto my-auto"
-        >
+          class="bg-black rounded px-3 py-1 flex items-center justify-center hover:bg-gray-800 transition  mx-10">
           <i class="fas fa-moon text-white text-sm"></i>
         </button>
       </div>
@@ -119,10 +118,6 @@
     </nav>
   </header>
 
-<!-- start main -->
-
-
-
 
 
  <!--  start main  -->
@@ -130,10 +125,10 @@
   <br>
     <div class=" px-4 py-8 mt-12 mb-12">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-          <h1 class="text-black text-[30px] font-bold md:flex-1">
+          <h1 class="text-black text-[36px] font-bold md:flex-1">
             Unlock Government Support for Your Business</h1>
        
-        <div class="relative inline-block text-left mx-5 mt-4 sm:mt-0">
+        <div class="relative inline-block text-left mx-0 mt-4 sm:mt-0">
             <button aria-expanded="true" aria-haspopup="true" aria-label="Filter" class="inline-flex justify-center w-16 rounded border border-gray-300 px-3 py-1 text-[12px] font-normal text-black hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-yellow-400" id="filter-menu-button" type="button">
               Filter
               <svg class="filter-icon mx-auto my-auto" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -159,8 +154,8 @@
 
         <!-- section 2 -->
         <div class="mt-6 flex flex-col md:flex-row md:items-start md:gap-5">
-          <div class="md:flex-1 relative rounded-md overflow-hidden max-w-[720px]">
-            <img alt="Blue globe icon representing startup news" class="w-full h-[430px]  rounded-sm object-cover flex-shrink-0 shadow-sm" height="80" src="https://storage.googleapis.com/a1aa/image/cf75df8f-ed43-43d4-5421-a172479621a1.jpg" width="600"/>
+          <div class="md:flex-1 relative rounded-md overflow-hidden max-w-[820px]">
+            <img alt="Blue globe icon representing startup news" class="w-full h-[460px]  rounded-sm object-cover flex-shrink-0 shadow-sm" height="80" src="https://storage.googleapis.com/a1aa/image/cf75df8f-ed43-43d4-5421-a172479621a1.jpg" width="600"/>
      
             <div
             class="absolute bottom-6 left-6"
@@ -179,8 +174,8 @@
           </div>
           </div>
     
-          <aside class=" w-full md:w-[400px] bg-white border border-gray-200 rounded-md p-4 shadow-sm">
-            <h2 class="text-black font-semibold text-[16px] mb-1 border-b border-gray-300 pb-1">
+          <aside class=" w-full md:w-[400px] bg-white border border-gray-200 rounded-md p-4 shadow-sm px-7">
+            <h2 class="text-black font-bold text-[18px] mb-3 border-b-2 border-black pb-0">
              Stay Connected
             </h2>
             <div class="grid grid-cols-2 gap-2 mb-4">
@@ -222,7 +217,7 @@
              </a>
             </div>
             <div class="relative overflow-hidden rounded-md">
-             <img alt="Plate of food on a table with garnish, representing an advertisement" class="w-[400px] h-[200px] object-cover" height="180" src="https://storage.googleapis.com/a1aa/image/55353739-040e-4717-c6ed-e6e4cf4f7358.jpg" width="288"/>
+             <img alt="Plate of food on a table with garnish, representing an advertisement" class="w-[400px] h-[220px] object-cover" height="180" src="https://storage.googleapis.com/a1aa/image/55353739-040e-4717-c6ed-e6e4cf4f7358.jpg" width="288"/>
              <div class="absolute inset-0 flex items-center justify-center text-white font-semibold text-lg pointer-events-none select-none bg-black bg-opacity-30">
               Ad
              </div>
@@ -232,14 +227,10 @@
       </div>
 
 
- 
-
-
-
-
+<br>
         <div class="max-w-[1200px] w-full bg-white p-8">
          <section>
-          <h1 class="text-black text-[30px] font-semibold mb-2">
+          <h1 class="text-black text-[36px] font-semibold mb-2">
            Explore Popular Government Schemes for Startups
           </h1>
           <p class="text-[15px] text-[#4B4B4B] mb-8">
@@ -247,7 +238,7 @@
           </p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
            <!-- Card 1 -->
-           <div class="bg-white border border-gray-200 p-5 shadow-sm">
+           <div class="bg-gray-100 border border-gray-200 p-5 shadow-sm">
             <div class="flex items-center gap-3 mb-3">
              <img alt="Icon representing Startup India Seed Fund Scheme with three pillars" class="w-[60px] h-[60px]" height="24" src="https://storage.googleapis.com/a1aa/image/d84a6bac-2aa9-40af-1117-cf1e86dfc4ee.jpg" width="24"/>
              <div>
@@ -260,13 +251,13 @@
               </p>
              </div>
             </div>
-            <p class="text-[17px] text-[#7B7B7B] mb-1 leading-tight">
+            <p class="text-[17px] text-[#7B7B7B] mb-1 leading-tight mt-10">
              Funding up to ₹50L for prototype development, MVP, and market entry.
             </p>
             <p class="text-[15px] text-[#7B7B7B] mb-4 leading-tight">
              Eligibility: Innovative early-stage startups.
             </p>
-             <button class="bg-[#0046FF] text-white text-[15px]  flex items-center justify-end font-semibold px-4 py-1 rounded float-right" type="button">
+             <button class="bg-[#0046FF] text-white text-[15px]  flex items-center justify-end font-semibold px-4 py-1  float-right" type="button">
              Apply Now
              <i class="fas fa-arrow-right text-[15px] ml-1">
              </i>
@@ -275,12 +266,12 @@
 
        
            <!-- Card 2 -->
-           <div class="bg-white border border-gray-200 p-5 shadow-sm flex flex-col justify-between">
+           <div class="bg-gray-100 border border-gray-200 p-5 shadow-sm flex flex-col justify-between">
             <div>
              <div class="flex items-center gap-3 mb-3">
               <img alt="Icon representing MSME Credit Guarantee Scheme with handshake" class="w-[60px] h-[60px]" height="24" src="https://storage.googleapis.com/a1aa/image/e4001f95-1893-4d6a-803b-6d5ba22a522a.jpg" width="24"/>
               <div>
-               <h2 class="text-[20px] font-bold text-black leading-tight">
+               <h2 class="text-[20px] font-bold text-black mb-4 leading-tight">
                 MSME Credit Guarantee Scheme
                </h2>
                <p class="text-[15px] font-awesome text-black leading-tight">
@@ -288,7 +279,7 @@
                </p>
               </div>
              </div>
-             <p class="text-[17px] text-[#7B7B7B] mb-1 leading-tight">
+             <p class="text-[17px] text-[#7B7B7B] mb-1 leading-tight mt-10">
               Get collateral-free loans to grow your small business or startup.
              </p>
              <p class="text-[15px] text-[#7B7B7B] mb-4 leading-tight">
@@ -302,12 +293,12 @@
             </div>
            </div>
            <!-- Card 3 -->
-           <div class="bg-white border border-gray-200 p-5 shadow-sm flex flex-col justify-between">
+           <div class="bg-gray-100 border border-gray-200 p-5 shadow-sm flex flex-col justify-between">
             <div>
              <div class="flex items-center gap-3 mb-3">
               <img alt="Icon representing Atal Innovation Mission with globe and gear" class="w-[60px] h-[60px]" height="24" src="https://storage.googleapis.com/a1aa/image/f4b9a0cb-915c-40cf-1e1a-0823cb02af7c.jpg" width="24"/>
               <div>
-               <h2 class="text-[20px] font-bold text-black leading-tight">
+               <h2 class="text-[20px] font-bold text-black mb-4 leading-tight">
                 Atal Innovation Mission
                </h2>
                <p class="text-[15px] font-awesome text-black leading-tight">
@@ -315,7 +306,7 @@
                </p>
               </div>
              </div>
-             <p class="text-[17px] text-[#7B7B7B] mb-1 leading-tight">
+             <p class="text-[17px] text-[#7B7B7B] mb-1 leading-tight mt-10">
               Government support for innovations in schools, colleges &amp; institutions.
              </p>
              <p class="text-[15px] text-[#7B7B7B] mb-4 leading-tight">
@@ -329,7 +320,7 @@
             </div>
            </div>
            <!-- Card 4 -->
-           <div class="bg-white border border-gray-200 p-5 shadow-sm flex flex-col justify-between">
+           <div class="bg-gray-100 border border-gray-200 p-5 shadow-sm flex flex-col justify-between">
             <div>
              <div class="flex items-center gap-3 mb-3">
               <img alt="Icon representing SIDBI Fund of Funds for Startups with lightbulb and gear" class="w-[60px] h-[60px]" height="24" src="https://storage.googleapis.com/a1aa/image/03ecfd5c-2ee1-4c97-f080-d0e7d577c039.jpg" width="24"/>
@@ -337,12 +328,12 @@
                <h2 class="text-[20px] font-bold text-black leading-tight">
                 SIDBI Fund of Funds for Startups
                </h2>
-               <p class="text-[15px] font-awesome text-black leading-tight">
+               <p class="text-[15px] font-awesome text-black  mb-4 leading-tight">
                 SIDBI (Small Industries Development Bank of India)
                </p>
               </div>
              </div>
-             <p class="text-[17px] text-[#7B7B7B] mb-1 leading-tight">
+             <p class="text-[17px] text-[#7B7B7B] mb-1 leading-tight mt-10">
               Indirect funding to startups via Alternative Investment Funds (AIFs).
              </p>
              <p class="text-[15px] text-[#7B7B7B] mb-4 leading-tight">
@@ -359,12 +350,16 @@
          </section>
         </div>
 
+      </main>
+      <br>
+      <br>
+      <br>
 
 
-        <div class="max-w-[1100px] mx-auto px-10 py-10">
-          <section>
+        <div class="bg-gray-100 w-full">
+          <section class="max-w-[1200px] mx-auto px-10 py-10">
            <div class="flex justify-between items-center mb-6">
-            <h2 class="font-bold text-[30px] leading-tight">
+            <h2 class="font-bold text-[36px] leading-tight">
              Trending News
             </h2>
             <a class="text-[20px] font-sans font-bold text-black/70 hover:text-black flex items-center gap-1" href="#">
@@ -413,11 +408,13 @@
           </section>
           </div>
 
+<br>
 
+        </br>
 
-          <div class=" max-w-[1100px] mx-auto py-10 px-10 p-6 mt-5">
+          <div class="bg-gray-100 max-w-[1200px] mx-auto py-10 px-10 p-6 mt-12">
              <header class="flex justify-between items-center mb-6">
-              <h1 class="text-black text-[30px] font-sans font-bold">
+              <h1 class="text-black text-[36px] font-sans font-bold">
                Viral Videos
               </h1>
               <a class="text-black text-[20px] font-sans font-[15px] flex items-center gap-1 hover:underline" href="#">
@@ -512,8 +509,8 @@
           </div>
          
 
-
-          <div class="bg-white  flex justify-center items-center  p-6">
+<br>
+          <div class="bg-white max-w-[1200px] mx-auto flex justify-center items-center mt-12 mb-12  p-0">
             <div class="relative flex max-w-auto w-full gap-1">
              <img alt="Black chair with a lightbox sign that says 'THINK OUTSIDE THE BOX' in a room with blurred plant in foreground" class="object-cover w-1/4" height="400" src="https://storage.googleapis.com/a1aa/image/3a6f1b1d-7256-4b23-d08a-7c82faec0679.jpg" width="300"/>
              <img alt="White laptop placed on a wooden table in a cafe setting with chairs and window in background" class="object-cover w-1/4" height="400" src="https://storage.googleapis.com/a1aa/image/e41b10c7-2451-430c-d943-132c9a1eaab9.jpg" width="400"/>
@@ -530,7 +527,6 @@
           </div>
 
 
-   </main>
 
 <!-- start footer -->
 <footer class="bg-black relative">
