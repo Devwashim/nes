@@ -17,53 +17,52 @@
     <!-- Top bar -->
 <main>
 
-    <div
-      class="bg-[#001f7f] flex items-center justify-between px-4 sm:px-6 md:px-10 lg:px-16 h-16"
+  <div
+  class="bg-[#001f7f] flex items-center justify-between px-4 sm:px-6 md:px-10 lg:px-16 h-16"
+>
+  <div class="text-yellow-400 font-extrabold text-2xl leading-none">
+    Newjnest
+  </div>
+  <div class="flex items-center space-x-3">
+    <form aria-label="Site search"
+    class="flex items-center w-auto max-w-auto mx-1 mt-auto sm:mx-2 my-auto"
+    role="search">
+    <div class="relative w-auto sm:w-[400px] ">
+      <input class="w-full rounded-sm text-[13px] py-2 pl-4 pr-12 text-black font-normal" placeholder="What are you looking for?" type="text"/>
+   
+      <button aria-label="Filter" class="absolute right-1 top-3 text-black text-sm gap-0 mx-2 ">
+       <i class="fas fa-filter">
+       </i>
+      </button>
+         <button aria-label="Search" class="absolute right-7 top-3 text-gray-600 text-sm mx-2 ">
+       <i class="fas fa-search">
+       </i>
+      </button>
+     </div>
+
+  </form>
+
+    <button
+      aria-label="Select country"
+      class="flex items-center border border-gray-300 rounded bg-white px-2 py-1 my-auto  hover:bg-gray-100 transition "
     >
-      <div class="text-yellow-400 font-extrabold text-2xl leading-none">
-        Newjnest
-      </div>
-
-
-      <div class="flex items-center space-x-3">
-        <form aria-label="Site search"
-        class="flex items-center w-auto max-w-auto mx-1 mt-auto sm:mx-2 my-auto"
-        role="search">
-        <div class="relative w-auto sm:w-[400px] ">
-          <input class="w-full rounded-sm text-[13px] py-1.5 pl-3 pr-12 text-black font-normal" placeholder="What are you looking for?" type="text"/>
-       
-          <button aria-label="Filter" class="absolute right-1 top-1.5 text-black text-sm gap-0 mx-1 ">
-           <i class="fas fa-filter">
-           </i>
-          </button>
-             <button aria-label="Search" class="absolute right-7 top-1.5 text-black text-sm">
-           <i class="fas fa-search">
-           </i>
-          </button>
-         </div>
-
-      </form>
-
-        <button
-          aria-label="Select country"
-          class="flex items-center border border-gray-300 rounded bg-white px-2 py-1 my-auto  hover:bg-gray-100 transition "
-        >
-          <img
-            alt="Indian flag placeholder with orange, white and green horizontal stripes and blue chakra in center"
-            class="object-cover"
-            height="16"
-            src="https://storage.googleapis.com/a1aa/image/94e0326c-0e42-494c-ef27-ed44c3f99a98.jpg"
-            width="24"
-          />
-          <i class="fas fa-caret-down text-gray-600 ml-1 text-xs"></i>
-        </button>
-        <button
-          aria-label="Toggle dark mode"
-          class="bg-black rounded px-3 py-1 flex items-center justify-center hover:bg-gray-800 transition  mx-10">
-          <i class="fas fa-moon text-white text-sm"></i>
-        </button>
-      </div>
-    </div>
+      <img
+        alt="Indian flag placeholder with , white and green horizontal stripes and blue chakra in center"
+        class="object-cover"
+        height="15"
+        src=""
+        width="24"
+      />
+      <i class="fas fa-caret-down text-gray-600 ml-1 text-xs"></i>
+    </button>
+    <button
+      aria-label="Toggle dark mode"
+      class="bg-black rounded-full px-3 py-2 flex items-center justify-center hover:bg-gray-800 transition  mx-10">
+      <i class="fas fa-moon text-white text-sm"></i>
+    </button>
+    
+  </div>
+</div>
     <!-- Bottom nav -->
     <nav
       aria-label="Primary Navigation"
@@ -87,7 +86,7 @@
 Secure Your Startup's Future: A Step-by-Step<br>
 Funding Guide  </h1>
     <div class="relative inline-block text-left mx-0 mt-4 sm:mt-0">
-        <button aria-expanded="true" aria-haspopup="true" aria-label="Filter" class="inline-flex justify-center w-16 rounded border border-gray-300 px-3 py-1 text-[12px] font-normal text-black hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-yellow-400" id="filter-menu-button" type="button">
+        <button aria-expanded="true" aria-haspopup="true" aria-label="Filter" class="inline-flex justify-center w-25 rounded border border-gray-300 px-3 py-1 text-[15px] font-normal text-black hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-yellow-400 gap-2 " id="filter-menu-button" type="button">
           Filter
           <svg class="filter-icon mx-auto my-auto" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M3 5h18M7 12h10M10 19h4" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
@@ -119,7 +118,7 @@ Funding Guide  </h1>
           class="absolute bottom-6 left-6 space-y-6"
         >
           <h2
-            class="text-white font-bold text-[35px] leading-tight mb-1 drop-shadow-[0_0_3px_rgba(0,0,0,0.8)]"
+            class="text-white font-bold text-[35px] leading-tight mb-1 "
           >
           Secure Your Startup's Future: A Step-by-
           Step Funding Guide          </h2>
@@ -280,8 +279,8 @@ Funding Guide  </h1>
          <!-- Card 1 -->
          <div class="bg-[#F5F7F9] relative p-8 flex flex-col md:flex-row items-center md:items-start gap-6 rounded">
           <div class="relative">
-           <div class="w-20 h-20  rounded-md border-y-8 border-r-8  border-[#0023FF] flex items-center justify-center relative z-10 shadow-[-12px_0px_3px_-1px_#757575] ">
-            <img alt="Icon showing a calendar and a bottle representing funding needs " class="w-full h-full border-4  bg-white-600 opacity-100" height="40" src="https://storage.googleapis.com/a1aa/image/184f1428-2a78-43e9-0891-43d6a3813d47.jpg" width="40"/>
+           <div class="w-50 h-[100px]  flex items-center justify-center">
+            <img alt="Icon showing a calendar and a bottle representing funding needs " class="w-full h-full border-4  bg-white-600 opacity-100" height="40" src="img/page2/Group 35971.jpg" width="40"/>
            </div>
           </div>
           <div class="flex-1 space-y-6">
@@ -301,8 +300,8 @@ Funding Guide  </h1>
          <!-- Card 2 -->
          <div class="bg-[#F5F7F9] relative p-8 flex flex-col md:flex-row items-center md:items-start gap-6 rounded">
           <div class="relative">
-           <div class="w-20 h-20 rounded-md border-4 border-[#0023FF] bg-[#E6E9EB] shadow-[8px_8px_15px_rgba(0,0,0,0.1)] flex items-center justify-center relative z-10">
-            <img alt="Icon showing stacked bottles representing a business pitch" class="w- h-10 z-10" height="40" src="https://storage.googleapis.com/a1aa/image/0acf0e2c-0b21-4e95-de57-1af367250721.jpg" width="40"/>
+           <div class="w-50 h-[100px]  flex items-center justify-center relative z-10">
+            <img alt="Icon showing stacked bottles representing a business pitch" class="w-full h-full z-10" height="40" src="img/page2/Group 3597.png" width="40"/>
            </div>
           </div>
           <div class="flex-1 space-y-6">
@@ -320,8 +319,8 @@ Funding Guide  </h1>
          <!-- Card 3 -->
          <div class="bg-[#F5F7F9] relative p-8 flex flex-col md:flex-row items-center md:items-start gap-6 rounded">
           <div class="relative">
-           <div class="w-20 h-20 rounded-md border-4 border-[#0023FF] bg-[#E6E9EB] shadow-[8px_8px_15px_rgba(0,0,0,0.1)] flex items-center justify-center relative z-10">
-            <img alt="Icon showing a water tap representing investors" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/0d12dc2d-3bc3-45fb-f6e0-ba9fffa94a0f.jpg" width="40"/>
+           <div class="w-50 h-[100px] flex items-center justify-center relative z-10">
+            <img alt="Icon showing a water tap representing investors" class="w-full h-full" height="40" src="img/page2/Group 3597 (2).png" width="40"/>
            </div>
           </div>
           <div class="flex-1">
@@ -339,8 +338,8 @@ Funding Guide  </h1>
          <!-- Card 4 -->
          <div class="bg-[#F5F7F9] relative p-8 flex flex-col md:flex-row items-center md:items-start gap-6 rounded">
           <div class="relative">
-           <div class="w-20 h-20 rounded-md border-4 border-[#0023FF] bg-[#E6E9EB] shadow-[8px_8px_15px_rgba(0,0,0,0.1)] flex items-center justify-center relative z-10">
-            <img alt="Icon showing a dock with crane representing funding application" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/6b6d3a30-b5ab-481d-4c48-395c0d2dca9f.jpg" width="40"/>
+           <div class="w-50 h-[100]  flex items-center justify-center relative z-10">
+            <img alt="Icon showing a dock with crane representing funding application" class="w-full h-full" height="40" src="img/page2/Group 3597 (1).png" width="40"/>
            </div>
           </div>
           <div class="flex-1">
@@ -366,7 +365,7 @@ Funding Guide  </h1>
    <div class="relative w-full max-w-full mb-5 py-10">
         <!-- Background world map image -->
         <img
-          src="https://placehold.co/1920x1027/eeeeee/cccccc/png?text=World+Map+Background"
+          src="img/page2/world map BG.png"
           alt="World map in light gray as background"
           class="w-full h-auto"
           width="1920"
@@ -414,74 +413,82 @@ Funding Guide  </h1>
 
       
 <!-- start footer -->
-<footer class="bg-black relative">
-    <div class="absolute inset-x-0 top-0 h-20 overflow-hidden">
-      <div class="bg-[#0013D6] flex justify-center items-center  py-12 px-4 ">
-    </div>
-    </div>
-    <div class="max-w-auto mx-auto py-12 px-4 relative ">
-     <form action="#" class="bg-white rounded-md max-w-6xl mx-auto flex flex-col sm:flex-row items-center gap-4 p-10 mt-8">
-      <label class="text-black text-[20px] font-normal whitespace-nowrap" for="email">
-       Subscribe Newsletters
-      </label>
-      <input class="flex-grow bg-[#e5e5e5] text-xs text-black placeholder:text-black placeholder:text-opacity-50 rounded px-3 py-2 focus:outline-none" id="email" placeholder="Enter your email" type="email"/>
-      <button class="bg-[#0026FF] text-white text-xs font-semibold px-5 py-2 rounded hover:bg-[#001fcc] transition" type="submit">
-       Subscribe Now
-      </button>
-     </form>
 
-     <div class="flex flex-col sm:flex-row justify-between items-center text-white text-[20px] mt-12 ">
-      <div class="flex flex-wrap gap-2 sm:gap-2  justify-center sm:justify-start mb-6 sm:mb-0">
-       <a class="hover:underline" href="#">
-        About us
-       </a>
-       <a class="hover:underline" href="#">
-        Discover
-       </a>
-       <a class="hover:underline" href="#">
-        Explore
-       </a>
-       <a class="hover:underline" href="#">
-        Books
-       </a>
-      </div>
-      <div class="font-bold  text-3xl mb-6 sm:mb-0">
-       Newjnest
-      </div>
-      <div class="flex gap-4 text-lg">
-       <a aria-label="Facebook" class="hover:text-[#0026FF]" href="#">
-        <i class="fab fa-facebook-f">
-        </i>
-       </a>
-       <a aria-label="Twitter" class="hover:text-[#0026FF]" href="#">
-        <i class="fab fa-twitter">
-        </i>
-       </a>
-       <a aria-label="Vimeo" class="hover:text-[#0026FF]" href="#">
-        <i class="fab fa-vimeo-v">
-        </i>
-       </a>
-       <a aria-label="YouTube" class="hover:text-[#0026FF]" href="#">
-        <i class="fab fa-youtube">
-        </i>
-       </a>
-      </div>
-     </div>
-     <div class=" flex flex-col sm:flex-row justify-between text-[15px] text-white opacity-70 mt-6">
-      <div>
-       © 2019 LFT Media. All rights reserved
-      </div>
-      <div class="flex gap-4 justify-center sm:justify-end mt-2 sm:mt-0">
-       <a class="hover:underline" href="#">
-        Terms of Service
-       </a>
-       <a class="hover:underline" href="#">
-        Privacy Policy
-       </a>
-      </div>
-     </div>
-    </div>
-   </footer>
+      <!-- start footer -->
+      <footer class="bg-black relative">
+        <div class="absolute inset-x-0 top-20 h-150px overflow-hidden">
+          <!-- <div class="bg-[#0013D6] flex justify-center items-center  py-12 px-4 "> -->
+        <img alt="" class="w-full object-cover " height="100" src="img/page2/Shape.png" style="height: 150px;" width="1200px"/>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="max-w-auto mx-auto py-12 px-4 relative ">
+         <form action="#" class="bg-white rounded-md max-w-6xl mx-auto flex flex-col sm:flex-row items-center gap-4 p-10">
+          <label class="text-black text-[20px] font-normal whitespace-nowrap" for="email">
+           Subscribe Newsletters
+          </label>
+          <input class="flex-grow bg-[#e5e5e5] text-xs text-black placeholder:text-black placeholder:text-opacity-50 rounded px-3 py-2 focus:outline-none" id="email" placeholder="Enter your email" type="email"/>
+          <button class="bg-[#0026FF] text-white text-xs font-semibold px-5 py-2 rounded hover:bg-[#001fcc] transition" type="submit">
+           Subscribe Now
+          </button>
+         </form>
+         <div class="flex flex-col sm:flex-row justify-between items-center text-white text-[20px] mt-12 ">
+          <div class="flex flex-wrap gap-2 sm:gap-2  justify-center sm:justify-start mb-6 sm:mb-0">
+           <a class="hover:underline" href="#">
+            About us
+           </a>
+           <a class="hover:underline" href="#">
+            Discover
+           </a>
+           <a class="hover:underline" href="#">
+            Explore
+           </a>
+           <a class="hover:underline" href="#">
+            Books
+           </a>
+          </div>
+          <div class="font-bold  text-3xl mb-6 sm:mb-0">
+           Newjnest
+          </div>
+          <div class="flex gap-4 text-lg">
+           <a aria-label="Facebook" class="hover:text-[#0026FF]" href="#">
+            <i class="fab fa-facebook-f">
+            </i>
+           </a>
+           <a aria-label="Twitter" class="hover:text-[#0026FF]" href="#">
+            <i class="fab fa-twitter">
+            </i>
+           </a>
+           <a aria-label="Vimeo" class="hover:text-[#0026FF]" href="#">
+            <i class="fab fa-vimeo-v">
+            </i>
+           </a>
+           <a aria-label="YouTube" class="hover:text-[#0026FF]" href="#">
+            <i class="fab fa-youtube">
+            </i>
+           </a>
+          </div>
+         </div>
+         <div class=" flex flex-col sm:flex-row justify-between text-[15px] text-white opacity-70 mt-6">
+          <div>
+           © 2019 LFT Media. All rights reserved
+          </div>
+          <div class="flex gap-4 justify-center sm:justify-end mt-2 sm:mt-0">
+           <a class="hover:underline" href="#">
+            Terms of Service
+           </a>
+           <a class="hover:underline" href="#">
+            Privacy Policy
+           </a>
+          </div>
+         </div>
+        </div>
+       </footer>
    <script src="newjnest.js"></script>
   </body>
  </html>
