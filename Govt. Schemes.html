@@ -1,541 +1,592 @@
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta content="width=device-width, initial-scale=1" name="viewport"/>
-        <title>
-            Govt. Schemes 
-        </title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body class="bg-white">
-        <header class="w-100 select-none">
-            <!-- Top bar -->
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>
+    Govt. Schemes
+  </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white">
+  <header class="w-100 select-none">
+    <!-- Top bar -->
+    <div class="bg-[#001f7f] flex items-center justify-between px-4 sm:px-6 md:px-10 lg:px-16 h-16">
+      <div class="text-yellow-400 font-extrabold text-2xl leading-none">
+        Newjnest
+      </div>
+      <div class="flex items-center space-x-3">
+        <form aria-label="Site search" class="flex items-center w-auto max-w-auto mx-1 mt-auto sm:mx-2 my-auto"
+          role="search">
+          <div class="relative w-auto sm:w-[400px] ">
+            <input class="w-full rounded-sm text-[13px] py-2 pl-4 pr-12 text-black font-normal"
+              placeholder="What are you looking for?" type="text" />
+            <button aria-label="Filter" class="absolute right-1 top-3 text-black text-sm gap-0 mx-2 ">
+              <i class="fas fa-filter">
+              </i>
+            </button>
+            <button aria-label="Search" class="absolute right-7 top-3 text-gray-600 text-sm mx-2 ">
+              <i class="fas fa-search">
+              </i>
+            </button>
+          </div>
+        </form>
+        <button aria-label="Select country"
+          class="flex items-center border border-gray-300 rounded bg-white px-2 py-1 my-auto  hover:bg-gray-100 transition ">
+          <img alt="Indian flag placeholder with , white and green horizontal stripes and blue chakra in center"
+            class="object-cover" height="15" src="" width="24" />
+          <i class="fas fa-caret-down text-gray-600 ml-1 text-xs"></i>
+        </button>
+        <button aria-label="Toggle dark mode"
+          class="bg-black rounded-full px-3 py-2 flex items-center justify-center hover:bg-gray-800 transition  mx-10">
+          <i class="fas fa-moon text-white text-sm"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Bottom nav -->
+    <nav aria-label="Primary Navigation"
+      class="bg-[#050663] flex justify-center space-x-8 sm:space-x-10 text-[10px] sm:text-[16px] text-white py-2 px-2">
+      <a class="hover:underline hover:decoration-white" href="index (7).html">Home</a>
+      <a class="hover:underline hover:decoration-white" href="Stories.html">Stories</a>
+      <a class="hover:underline hover:decoration-white" href="Funding Guide.html">Funding Guide</a>
+      <a class="text-yellow-400 font-semibold hover:underline hover:decoration-yellow-400"
+        href="Govt. Schemes.html">Govt. Schemes</a>
+      <a class="hover:underline hover:decoration-white" href="Legal Advice.html">Legal Advice</a>
+      <a class="hover:underline hover:decoration-white" href="Experts Express.html">Experts Express</a>
+    </nav>
+  </header>
+  <!--  start main  -->
+  <main class="max-w-[1200px] mx-auto">
+    <br>
+    <div class=" px-4 py-8 mt-12 mb-12">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+        <h1 class="text-black text-[36px] font-bold md:flex-1">
+          Unlock Government Support for Your Business
+        </h1>
+        <div class="relative inline-block text-left mx-0 mt-4 sm:mt-0">
+          <button aria-expanded="true" aria-haspopup="true" aria-label="Filter"
+            class="inline-flex justify-center w-20 rounded border border-gray-300 px-3 py-1 text-[15px] font-normal text-black hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-yellow-400 gap-2"
+            id="filter-menu-button" type="button">
+            Filter
+            <svg class="filter-icon mx-auto my-auto" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 5h18M7 12h10M10 19h4" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="1.5"></path>
+            </svg>
+          </button>
+          <div aria-labelledby="filter-menu-button"
+            class="origin-top-left absolute right-0 mt-1 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
+            id="filter-menu" role="menu" tabindex="-1">
+            <div class="py-1" role="none">
+              <button class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem"
+                tabindex="-1" type="button">
+                Most Recent
+              </button>
+              <button class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem"
+                tabindex="-1" type="button">
+                Most Popular
+              </button>
+              <button class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem"
+                tabindex="-1" type="button">
+                Trending
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section 2 -->
+      <div class="mt-6 flex flex-col md:flex-row md:items-start md:gap-5">
+        <div class="md:flex-1 relative rounded-md overflow-hidden max-w-[820px]">
+          <img alt="Blue globe icon representing startup news"
+            class="w-full h-[460px]  rounded-sm object-cover flex-shrink-0 shadow-sm" height="80"
+            src="https://storage.googleapis.com/a1aa/image/cf75df8f-ed43-43d4-5421-a172479621a1.jpg" width="600" />
+          <div class="absolute bottom-6 left-6">
+            <h2 class="text-white font-bold text-[25px] leading-tight mb-1 mb-7">
+              Learn about startup-friendly schemes, subsidies, and funding programs by Indian government bodies.
+            </h2>
+            <button
+              class="bg-gradient-to-b from-yellow-300 to-yellow-400 text-black text-[16px] w-[300px] font-semibold rounded px-4 py-2 shadow-md hover:brightness-110 transition"
+              type="button">
+              Browse Schemes
+            </button>
+          </div>
+        </div>
+        <aside class=" w-full md:w-[400px] bg-white border border-gray-200 rounded-md p-4 shadow-sm px-7">
+          <h2 class="text-black font-bold text-[18px] mb-3 border-b-2 border-black pb-0">
+            Stay Connected
+          </h2>
+          <div class="grid grid-cols-2 gap-2 mb-4">
+            <a class="flex items-center justify-center bg-blue-700  items-start text-white text-[12px] font-semibold py-1 rounded"
+              href="#">
+              <i class="fab fa-facebook-f text-2xl text-left mr-8">
+              </i>
+              15000
+              <br>Followers
+            </a>
+            <a class="flex items-center justify-center bg-orange-400 text-white   items-start text-[12px] font-semibold py-1 rounded"
+              href="#">
+              <i class="fab fa-instagram text-2xl text-left mr-8">
+              </i>
+              15000
+              <br>Followers
+            </a>
+            <a class="flex items-center justify-center bg-red-600   items-start  text-white text-[12px] font-semibold py-1 rounded"
+              href="#">
+              <i class="fab fa-youtube text-2xl text-left mr-8">
+              </i>
+              15000
+              <br>Followers
+            </a>
+            <a class="flex items-center justify-center bg-gray-900  items-start text-white text-[12px] font-semibold py-1 rounded"
+              href="#">
+              <i class="fab fa-twitter text-2xl text-left mr-8">
+              </i>
+              15000
+              <br>Followers
+            </a>
+            <a class="flex items-center justify-center  items-start  bg-pink-400 text-white text-[12px] font-semibold py-1 rounded"
+              href="#">
+              <i class="fab fa-dribbble text-2xl text-left mr-8">
+              </i>
+              15000
+              <br>Followers
+            </a>
+            <a class="flex items-center justify-center bg-blue-500  text-center text-white text-[12px] font-semibold py-1 rounded"
+              href="#">
+              <i class="fab fa-behance text-2xl text-left mr-8">
+              </i>
+              15000
+              <br>Followers
+            </a>
+          </div>
+          <div class="relative overflow-hidden rounded-md">
+            <img alt="Plate of food on a table with garnish, representing an advertisement"
+              class="w-[400px] h-[220px] object-cover" height="180"
+              src="https://storage.googleapis.com/a1aa/image/55353739-040e-4717-c6ed-e6e4cf4f7358.jpg" width="288" />
             <div
-                class="bg-[#001f7f] flex items-center justify-between px-4 sm:px-6 md:px-10 lg:px-16 h-16"
-                >
-                <div class="text-yellow-400 font-extrabold text-2xl leading-none">
-                    Newjnest
-                </div>
-                <div class="flex items-center space-x-3">
-                    <form aria-label="Site search"
-                        class="flex items-center w-auto max-w-auto mx-1 mt-auto sm:mx-2 my-auto"
-                        role="search">
-                        <div class="relative w-auto sm:w-[400px] ">
-                            <input class="w-full rounded-sm text-[13px] py-2 pl-4 pr-12 text-black font-normal" placeholder="What are you looking for?" type="text"/>
-                            <button aria-label="Filter" class="absolute right-1 top-3 text-black text-sm gap-0 mx-2 ">
-                            <i class="fas fa-filter">
-                            </i>
-                            </button>
-                            <button aria-label="Search" class="absolute right-7 top-3 text-gray-600 text-sm mx-2 ">
-                            <i class="fas fa-search">
-                            </i>
-                            </button>
-                        </div>
-                    </form>
-                    <button
-                        aria-label="Select country"
-                        class="flex items-center border border-gray-300 rounded bg-white px-2 py-1 my-auto  hover:bg-gray-100 transition "
-                        >
-                    <img
-                        alt="Indian flag placeholder with , white and green horizontal stripes and blue chakra in center"
-                        class="object-cover"
-                        height="15"
-                        src=""
-                        width="24"
-                        />
-                    <i class="fas fa-caret-down text-gray-600 ml-1 text-xs"></i>
-                    </button>
-                    <button
-                        aria-label="Toggle dark mode"
-                        class="bg-black rounded-full px-3 py-2 flex items-center justify-center hover:bg-gray-800 transition  mx-10">
-                    <i class="fas fa-moon text-white text-sm"></i>
-                    </button>
-                </div>
+              class="absolute inset-0 flex items-center justify-center text-white font-semibold text-lg pointer-events-none select-none bg-black bg-opacity-30">
+              Ad
             </div>
-            <!-- Bottom nav -->
-            <nav
-                aria-label="Primary Navigation"
-                class="bg-[#050663] flex justify-center space-x-8 sm:space-x-10 text-[10px] sm:text-[16px] text-white py-2 px-2">
-                <a
-                    class="hover:underline hover:decoration-white"
-                    href="index (7).html">Home</a>
-                <a class="hover:underline hover:decoration-white" href="Stories.html">Stories</a>
-                <a class="hover:underline hover:decoration-white" href="Funding Guide.html"
-                    >Funding Guide</a>
-                <a class="text-yellow-400 font-semibold hover:underline hover:decoration-yellow-400" href="Govt. Schemes.html">Govt. Schemes</a>
-                <a class="hover:underline hover:decoration-white" href="Legal Advice.html">Legal Advice</a>
-                <a class="hover:underline hover:decoration-white" href="Experts Express.html">Experts Express</a>
-            </nav>
-        </header>
-        <!--  start main  -->
-        <main class="max-w-[1200px] mx-auto">
-            <br>
-            <div class=" px-4 py-8 mt-12 mb-12">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-                    <h1 class="text-black text-[36px] font-bold md:flex-1">
-                        Unlock Government Support for Your Business
-                    </h1>
-                    <div class="relative inline-block text-left mx-0 mt-4 sm:mt-0">
-                        <button aria-expanded="true" aria-haspopup="true" aria-label="Filter" class="inline-flex justify-center w-20 rounded border border-gray-300 px-3 py-1 text-[15px] font-normal text-black hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-yellow-400 gap-2" id="filter-menu-button" type="button">
-                            Filter
-                            <svg class="filter-icon mx-auto my-auto" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3 5h18M7 12h10M10 19h4" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-                            </svg>
-                        </button>
-                        <div aria-labelledby="filter-menu-button" class="origin-top-left absolute right-0 mt-1 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden" id="filter-menu" role="menu" tabindex="-1">
-                            <div class="py-1" role="none">
-                                <button class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" tabindex="-1" type="button">
-                                Most Recent
-                                </button>
-                                <button class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" tabindex="-1" type="button">
-                                Most Popular
-                                </button>
-                                <button class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" tabindex="-1" type="button">
-                                Trending
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- section 2 -->
-                <div class="mt-6 flex flex-col md:flex-row md:items-start md:gap-5">
-                    <div class="md:flex-1 relative rounded-md overflow-hidden max-w-[820px]">
-                        <img alt="Blue globe icon representing startup news" class="w-full h-[460px]  rounded-sm object-cover flex-shrink-0 shadow-sm" height="80" src="https://storage.googleapis.com/a1aa/image/cf75df8f-ed43-43d4-5421-a172479621a1.jpg" width="600"/>
-                        <div
-                            class="absolute bottom-6 left-6"
-                            >
-                            <h2
-                                class="text-white font-bold text-[25px] leading-tight mb-1 mb-7"
-                                >
-                                Learn about startup-friendly schemes, subsidies, and funding programs by Indian government bodies.           
-                            </h2>
-                            <button
-                                class="bg-gradient-to-b from-yellow-300 to-yellow-400 text-black text-[16px] w-[300px] font-semibold rounded px-4 py-2 shadow-md hover:brightness-110 transition"
-                                type="button"
-                                >
-                            Browse Schemes            
-                            </button>
-                        </div>
-                    </div>
-                    <aside class=" w-full md:w-[400px] bg-white border border-gray-200 rounded-md p-4 shadow-sm px-7">
-                        <h2 class="text-black font-bold text-[18px] mb-3 border-b-2 border-black pb-0">
-                            Stay Connected
-                        </h2>
-                        <div class="grid grid-cols-2 gap-2 mb-4">
-                            <a class="flex items-center justify-center bg-blue-700  items-start text-white text-[12px] font-semibold py-1 rounded" href="#">
-                            <i class="fab fa-facebook-f text-2xl text-left mr-8">
-                            </i>
-                            15000 
-                            <br>Followers
-                            </a>
-                            <a class="flex items-center justify-center bg-orange-400 text-white   items-start text-[12px] font-semibold py-1 rounded" href="#">
-                            <i class="fab fa-instagram text-2xl text-left mr-8">
-                            </i>
-                            15000 
-                            <br>Followers
-                            </a>
-                            <a class="flex items-center justify-center bg-red-600   items-start  text-white text-[12px] font-semibold py-1 rounded" href="#">
-                            <i class="fab fa-youtube text-2xl text-left mr-8">
-                            </i>
-                            15000 
-                            <br>Followers
-                            </a>
-                            <a class="flex items-center justify-center bg-gray-900  items-start text-white text-[12px] font-semibold py-1 rounded" href="#">
-                            <i class="fab fa-twitter text-2xl text-left mr-8">
-                            </i>
-                            15000 
-                            <br>Followers
-                            </a>
-                            <a class="flex items-center justify-center  items-start  bg-pink-400 text-white text-[12px] font-semibold py-1 rounded" href="#">
-                            <i class="fab fa-dribbble text-2xl text-left mr-8">
-                            </i>
-                            15000 
-                            <br>Followers
-                            </a>
-                            <a class="flex items-center justify-center bg-blue-500  text-center text-white text-[12px] font-semibold py-1 rounded" href="#">
-                            <i class="fab fa-behance text-2xl text-left mr-8">
-                            </i>
-                            15000 
-                            <br>Followers
-                            </a>
-                        </div>
-                        <div class="relative overflow-hidden rounded-md">
-                            <img alt="Plate of food on a table with garnish, representing an advertisement" class="w-[400px] h-[220px] object-cover" height="180" src="https://storage.googleapis.com/a1aa/image/55353739-040e-4717-c6ed-e6e4cf4f7358.jpg" width="288"/>
-                            <div class="absolute inset-0 flex items-center justify-center text-white font-semibold text-lg pointer-events-none select-none bg-black bg-opacity-30">
-                                Ad
-                            </div>
-                        </div>
-                    </aside>
-                </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <br>
+    <div class="max-w-[1200px] w-full bg-white p-8">
+      <section>
+        <h1 class="text-black text-[36px] font-semibold mb-2">
+          Explore Popular Government Schemes for Startups
+        </h1>
+        <p class="text-[15px] text-[#4B4B4B] mb-8">
+          Get access to funding, support, and incentives offered by trusted government initiatives designed to help your
+          startup thrive.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Card 1 -->
+          <div class="bg-gray-100 border border-gray-200 p-5 shadow-sm">
+            <div class="flex items-center gap-3 mb-3">
+              <img alt="Icon representing Startup India Seed Fund Scheme with three pillars" class="w-[60px] h-[60px]"
+                height="24" src="img/page3/Bank.png" width="24" />
+              <div>
+                <h2 class="text-[20px] font-bold text-black leading-tight mb-3">
+                  Startup India Seed Fund
+                  <br>Scheme
+                </h2>
+                <p class="text-[15px] font-awesome text-black leading-tight">
+                  Startup India
+                </p>
+              </div>
             </div>
-            <br>
-            <div class="max-w-[1200px] w-full bg-white p-8">
-                <section>
-                    <h1 class="text-black text-[36px] font-semibold mb-2">
-                        Explore Popular Government Schemes for Startups
-                    </h1>
-                    <p class="text-[15px] text-[#4B4B4B] mb-8">
-                        Get access to funding, support, and incentives offered by trusted government initiatives designed to help your startup thrive.
-                    </p>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- Card 1 -->
-                        <div class="bg-gray-100 border border-gray-200 p-5 shadow-sm">
-                            <div class="flex items-center gap-3 mb-3">
-                                <img alt="Icon representing Startup India Seed Fund Scheme with three pillars" class="w-[60px] h-[60px]" height="24" src="img/page3/Bank.png" width="24"/>
-                                <div>
-                                    <h2 class="text-[20px] font-bold text-black leading-tight mb-3">
-                                        Startup India Seed Fund 
-                                        <br>Scheme
-                                    </h2>
-                                    <p class="text-[15px] font-awesome text-black leading-tight">
-                                        Startup India
-                                    </p>
-                                </div>
-                            </div>
-                            <p class="text-[17px] text-[#7B7B7B] mb-1 leading-tight mt-10">
-                                Funding up to ₹50L for prototype development, MVP, and market entry.
-                            </p>
-                            <p class="text-[15px] text-[#7B7B7B] mb-4 leading-tight">
-                                Eligibility: Innovative early-stage startups.
-                            </p>
-                            <button class="bg-[#0046FF] text-white text-[15px]  flex items-center justify-end font-semibold px-4 py-1  float-right" type="button">
-                            Apply Now
-                            <i class="fas fa-arrow-right text-[15px] ml-1">
-                            </i>
-                            </button>
-                        </div>
-                        <!-- Card 2 -->
-                        <div class="bg-gray-100 border border-gray-200 p-5 shadow-sm flex flex-col justify-between">
-                            <div>
-                                <div class="flex items-center gap-3 mb-3">
-                                    <img alt="Icon representing MSME Credit Guarantee Scheme with handshake" class="w-[60px] h-[60px]" height="24" src="img/page3/Help.png" width="24"/>
-                                    <div>
-                                        <h2 class="text-[20px] font-bold text-black mb-4 leading-tight">
-                                            MSME Credit Guarantee Scheme
-                                        </h2>
-                                        <p class="text-[15px] font-awesome text-black leading-tight">
-                                            Ministry of MSME
-                                        </p>
-                                    </div>
-                                </div>
-                                <p class="text-[17px] text-[#7B7B7B] mb-1 leading-tight mt-10">
-                                    Get collateral-free loans to grow your small business or startup.
-                                </p>
-                                <p class="text-[15px] text-[#7B7B7B] mb-4 leading-tight">
-                                    Eligibility: Registered MSMEs and startups.
-                                </p>
-                            </div>
-                            <div class="text-[15px] text-[#4B4B4B] font-semibold cursor-pointer flex items-center justify-end gap-1 select-none">
-                                Know More
-                                <i class="fas fa-arrow-right text-[15px]">
-                                </i>
-                            </div>
-                        </div>
-                        <!-- Card 3 -->
-                        <div class="bg-gray-100 border border-gray-200 p-5 shadow-sm flex flex-col justify-between">
-                            <div>
-                                <div class="flex items-center gap-3 mb-3">
-                                    <img alt="Icon representing Atal Innovation Mission with globe and gear" class="w-[60px] h-[60px]" height="24" src="img/page3/World Markets.png" width="24"/>
-                                    <div>
-                                        <h2 class="text-[20px] font-bold text-black mb-4 leading-tight">
-                                            Atal Innovation Mission
-                                        </h2>
-                                        <p class="text-[15px] font-awesome text-black leading-tight">
-                                            NITI Aayog
-                                        </p>
-                                    </div>
-                                </div>
-                                <p class="text-[17px] text-[#7B7B7B] mb-1 leading-tight mt-10">
-                                    Government support for innovations in schools, colleges &amp; institutions.
-                                </p>
-                                <p class="text-[15px] text-[#7B7B7B] mb-4 leading-tight">
-                                    Eligibility: Education institutions, innovators, incubators.
-                                </p>
-                            </div>
-                            <div class="text-[15px] text-[#4B4B4B] font-semibold cursor-pointer flex items-center justify-end gap-1 select-none">
-                                Learn More
-                                <i class="fas fa-arrow-right text-[15px]">
-                                </i>
-                            </div>
-                        </div>
-                        <!-- Card 4 -->
-                        <div class="bg-gray-100 border border-gray-200 p-5 shadow-sm flex flex-col justify-between">
-                            <div>
-                                <div class="flex items-center gap-3 mb-3">
-                                    <img alt="Icon representing SIDBI Fund of Funds for Startups with lightbulb and gear" class="w-[60px] h-[60px]" height="24" src="img/page3/Innovation.png" width="24"/>
-                                    <div>
-                                        <h2 class="text-[20px] font-bold text-black leading-tight">
-                                            SIDBI Fund of Funds for Startups
-                                        </h2>
-                                        <p class="text-[15px] font-awesome text-black  mb-4 leading-tight">
-                                            SIDBI (Small Industries Development Bank of India)
-                                        </p>
-                                    </div>
-                                </div>
-                                <p class="text-[17px] text-[#7B7B7B] mb-1 leading-tight mt-10">
-                                    Indirect funding to startups via Alternative Investment Funds (AIFs).
-                                </p>
-                                <p class="text-[15px] text-[#7B7B7B] mb-4 leading-tight">
-                                    Eligibility: DPIIT-recognized startups seeking early or growth-stage investments.
-                                </p>
-                            </div>
-                            <div class="text-[15px] text-[#4B4B4B] font-semibold cursor-pointer flex items-center justify-end gap-1 select-none">
-                                Explore Scheme
-                                <i class="fas fa-arrow-right text-[15px]">
-                                </i>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            <p class="text-[17px] text-[#7B7B7B] mb-1 leading-tight mt-10">
+              Funding up to ₹50L for prototype development, MVP, and market entry.
+            </p>
+            <p class="text-[15px] text-[#7B7B7B] mb-4 leading-tight">
+              Eligibility: Innovative early-stage startups.
+            </p>
+            <button
+              class="bg-[#0046FF] text-white text-[15px]  flex items-center justify-end font-semibold px-4 py-1  float-right"
+              type="button">
+              Apply Now
+              <i class="fas fa-arrow-right text-[15px] ml-1">
+              </i>
+            </button>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-gray-100 border border-gray-200 p-5 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3 mb-3">
+                <img alt="Icon representing MSME Credit Guarantee Scheme with handshake" class="w-[60px] h-[60px]"
+                  height="24" src="img/page3/Help.png" width="24" />
+                <div>
+                  <h2 class="text-[20px] font-bold text-black mb-4 leading-tight">
+                    MSME Credit Guarantee Scheme
+                  </h2>
+                  <p class="text-[15px] font-awesome text-black leading-tight">
+                    Ministry of MSME
+                  </p>
+                </div>
+              </div>
+              <p class="text-[17px] text-[#7B7B7B] mb-1 leading-tight mt-10">
+                Get collateral-free loans to grow your small business or startup.
+              </p>
+              <p class="text-[15px] text-[#7B7B7B] mb-4 leading-tight">
+                Eligibility: Registered MSMEs and startups.
+              </p>
             </div>
-        </main>
-        <br>
-        <br>
-        <br>
-        <div class="bg-gray-100 w-full">
-            <section class="max-w-[1200px] mx-auto px-10 py-10">
-                <div class="flex justify-between items-center mb-6">
-                    <h2 class="font-bold text-[36px] leading-tight">
-                        Trending News
-                    </h2>
-                    <a class="text-[20px] font-sans font-bold text-black/70 hover:text-black flex items-center gap-1" href="#">
-                    see all
-                    <i class="fas fa-chevron-right text-xs">
-                    </i>
-                    </a>
+            <div
+              class="text-[15px] text-[#4B4B4B] font-semibold cursor-pointer flex items-center justify-end gap-1 select-none">
+              Know More
+              <i class="fas fa-arrow-right text-[15px]">
+              </i>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-gray-100 border border-gray-200 p-5 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3 mb-3">
+                <img alt="Icon representing Atal Innovation Mission with globe and gear" class="w-[60px] h-[60px]"
+                  height="24" src="img/page3/World Markets.png" width="24" />
+                <div>
+                  <h2 class="text-[20px] font-bold text-black mb-4 leading-tight">
+                    Atal Innovation Mission
+                  </h2>
+                  <p class="text-[15px] font-awesome text-black leading-tight">
+                    NITI Aayog
+                  </p>
                 </div>
-                <div class="flex flex-col md:flex-row md:gap-8">
-                    <div class="md:flex-[0_0_55%] mb-6 md:mb-0 relative">
-                        <img alt="Three astronauts in space suits standing on rocky surface with foggy background" class="w-full h-[600px] object-cover" height="279" src="https://storage.googleapis.com/a1aa/image/7e6bb3d1-bc34-451f-198e-89409139ce06.jpg" width="504"/>
-                        <button aria-label="Play video" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full w-12 h-12 flex items-center justify-center">
-                        <i class="fas fa-play text-lg ml-[2px]">
-                        </i>
-                        </button>
-                    </div>
-                    <div class="md:flex-[0_0_45%] flex flex-col justify-between">
-                        <h3 class="text-[40px] leading-tight font-normal mb-0">
-                            Axiom Space Refines Training for Next Astronauts Mission
-                        </h3>
-                        <div class="flex gap-6 text-[15px] leading-[1.3] text-black/80">
-                            <p class="flex-1">
-                                <span class="font-black text-4xl leading-none mr-1 align-top">
-                                A
-                                </span>
-                                n American company that organises visits to the International Space Station.
-                                Houston-based Axiom has signed a memorandum of understanding with the UK Space Agency to try to make it happen.
-                                The project would probably cost £200m or more, but the idea is that it would be funded commercially. There would be no contribution from UK taxpayers. Axiom told the BBC that conversations with corporations and institutions interested in providing finance were already under way.
-                            </p>
-                            <p class="flex-1">
-                                The last UK individual to go into orbit was Tim Peake, who flew to the ISS as a European Space Agency (Esa) astronaut in 2015.
-                                "This is an exciting opportunity and actually unique," he commented. "No-one has done a 'national mission', commercially, like this before. It's a new model and would be paving the way for how we do space in the future."
-                                Details are sparse at the moment. No crew has been chosen, nor is there a concept yet for how it would be selected.
-                            </p>
-                        </div>
-                        <div class="flex justify-between text-[15px] mt-4 text-black/80">
-                            <span>
-                            Space and Universe | 9 mins read
-                            </span>
-                            <a class="font-bold hover:underline" href="#">
-                            Continue Reading...
-                            </a>
-                        </div>
-                    </div>
+              </div>
+              <p class="text-[17px] text-[#7B7B7B] mb-1 leading-tight mt-10">
+                Government support for innovations in schools, colleges &amp; institutions.
+              </p>
+              <p class="text-[15px] text-[#7B7B7B] mb-4 leading-tight">
+                Eligibility: Education institutions, innovators, incubators.
+              </p>
+            </div>
+            <div
+              class="text-[15px] text-[#4B4B4B] font-semibold cursor-pointer flex items-center justify-end gap-1 select-none">
+              Learn More
+              <i class="fas fa-arrow-right text-[15px]">
+              </i>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="bg-gray-100 border border-gray-200 p-5 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3 mb-3">
+                <img alt="Icon representing SIDBI Fund of Funds for Startups with lightbulb and gear"
+                  class="w-[60px] h-[60px]" height="24" src="img/page3/Innovation.png" width="24" />
+                <div>
+                  <h2 class="text-[20px] font-bold text-black leading-tight">
+                    SIDBI Fund of Funds for Startups
+                  </h2>
+                  <p class="text-[15px] font-awesome text-black  mb-4 leading-tight">
+                    SIDBI (Small Industries Development Bank of India)
+                  </p>
                 </div>
-            </section>
+              </div>
+              <p class="text-[17px] text-[#7B7B7B] mb-1 leading-tight mt-10">
+                Indirect funding to startups via Alternative Investment Funds (AIFs).
+              </p>
+              <p class="text-[15px] text-[#7B7B7B] mb-4 leading-tight">
+                Eligibility: DPIIT-recognized startups seeking early or growth-stage investments.
+              </p>
+            </div>
+            <div
+              class="text-[15px] text-[#4B4B4B] font-semibold cursor-pointer flex items-center justify-end gap-1 select-none">
+              Explore Scheme
+              <i class="fas fa-arrow-right text-[15px]">
+              </i>
+            </div>
+          </div>
         </div>
-        <br>
-        </br>
-        <div class="bg-gray-100 max-w-[1200px] mx-auto py-10 px-10 p-6 mt-12">
-            <header class="flex justify-between items-center mb-6">
-                <h1 class="text-black text-[36px] font-sans font-bold">
-                    Viral Videos
-                </h1>
-                <a class="text-black text-[20px] font-sans font-[15px] flex items-center gap-1 hover:underline" href="#">
-                see all
-                <i class="fas fa-chevron-right text-xs">
-                </i>
-                </a>
-            </header>
-            <div class="flex flex-col md:flex-row gap-6">
-                <!-- Left large video -->
-                <div class="flex-row  md:w-[800px] relative group cursor-pointer">
-                    <img alt="SpaceX rocket Starship prototype standing vertically on launch pad with blue sky background" class="w-full h-auto object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/0c361698-6737-4a3d-3e5e-0a3decd26db0.jpg" width="400"/>
-                    <button aria-label="Play video" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-30 rounded-full p-4 group-hover:bg-opacity-50 transition">
-                    <i class="fas fa-play text-white text-xl drop-shadow-lg">
-                    </i>
-                    </button>
-                    <h2 class="absolute bottom-12 mb-20 left-4 right-4 text-white font-sans font-semibold text-[28px] leading-snug drop-shadow-lg">
-                        SpaceX Fuels Up Starship in Key Test Ahead of 2nd-Ever
-                    </h2>
-                    <p class="mt-0 text-[15px] font-sans italic text-gray-700 max-w-full">
-                        SpaceX's latest Starship prototype just passed another big preflight test. The company conducted a "well...
-                        <span class="font-semibold ">
-                        Read more
-                        </span>
-                    </p>
-                </div>
-                <!-- Right side videos list -->
-                <div class="flex flex-col gap-4 ">
-                    <!-- Repeat 3 times -->
-                    <article class="flex gap-3">
-                        <div class="relative flex-shrink-0 w-[56%] cursor-pointer group">
-                            <img alt="Man and woman outdoors, woman wearing VR headset, man looking on, green field background" class="w-full h-[180px] object-cover" height="90" src="https://storage.googleapis.com/a1aa/image/1e9f6744-acf9-4ab0-59eb-dc006eb04682.jpg" width="160"/>
-                            <button aria-label="Play video" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-30 rounded-full p-2 group-hover:bg-opacity-50 transition">
-                            <i class="fas fa-play text-white text-sm drop-shadow-lg">
-                            </i>
-                            </button>
-                        </div>
-                        <div class="flex flex-col justify-start text-[14px] font-sans text-black">
-                            <h3 class="font-semibold leading-tight text-[20px]">
-                                Meta Quest's Best VR Travel Experience Gets New Locations &amp; AI Assistant
-                            </h3>
-                            <p class="mt-3 italic text-gray-700 mt-2 leading-snug max-w-full">
-                                The app, available for Meta Quest and PC VR-compatible headsets, features some of the highest quality...
-                                <span class="font-semibold ">
-                                Read more
-                                </span>
-                            </p>
-                        </div>
-                    </article>
-                    <article class="flex gap-5">
-                        <div class="relative flex-shrink-0 w-[56%] cursor-pointer group">
-                            <img alt="Man and woman outdoors, woman wearing VR headset, man looking on, green field background" class="w-full h-[180px] object-cover" height="90" src="https://storage.googleapis.com/a1aa/image/1e9f6744-acf9-4ab0-59eb-dc006eb04682.jpg" width="160"/>
-                            <button aria-label="Play video" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-30 rounded-full p-2 group-hover:bg-opacity-50 transition">
-                            <i class="fas fa-play text-white text-sm drop-shadow-lg">
-                            </i>
-                            </button>
-                        </div>
-                        <div class="flex flex-col justify-start text-[14px] font-sans text-black">
-                            <h3 class=" font-semibold leading-tight text-[20px]">
-                                Meta Quest's Best VR Travel Experience Gets New Locations &amp; AI Assistant
-                            </h3>
-                            <p class="mt-3 italic text-gray-700 mt-2 leading-snug max-w-full">
-                                The app, available for Meta Quest and PC VR-compatible headsets, features some of the highest quality...
-                                <span class="font-semibold ">
-                                Read more
-                                </span>
-                            </p>
-                        </div>
-                    </article>
-                    <article class="flex gap-3">
-                        <div class="relative flex-shrink-0 w-[56%] cursor-pointer group">
-                            <img alt="Man and woman outdoors, woman wearing VR headset, man looking on, green field background" class="w-full h-[150px] object-cover" height="90" src="https://storage.googleapis.com/a1aa/image/1e9f6744-acf9-4ab0-59eb-dc006eb04682.jpg" width="160"/>
-                            <button aria-label="Play video" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-30 rounded-full p-2 group-hover:bg-opacity-50 transition">
-                            <i class="fas fa-play text-white text-sm drop-shadow-lg">
-                            </i>
-                            </button>
-                        </div>
-                        <div class="flex flex-col justify-start text-[14px] font-sans text-black">
-                            <h3 class="font-semibold leading-tight text-[20px]">
-                                Meta Quest's Best VR Travel Experience Gets New Locations &amp; AI Assistant
-                            </h3>
-                            <p class="mt-3 italic text-gray-700 mt-1 leading-snug max-w-full">
-                                The app, available for Meta Quest and PC VR-compatible headsets, features some of the highest quality...
-                                <span class="font-semibold ">
-                                Read more
-                                </span>
-                            </p>
-                        </div>
-                    </article>
-                </div>
-            </div>
+      </section>
+    </div>
+  </main>
+  <br>
+  <br>
+  <br>
+  <div class="bg-gray-100 w-full">
+    <section class="max-w-[1200px] mx-auto px-10 py-10">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="font-bold text-[36px] leading-tight">
+          Trending News
+        </h2>
+        <a class="text-[20px] font-sans font-bold text-black/70 hover:text-black flex items-center gap-1" href="#">
+          see all
+          <i class="fas fa-chevron-right text-xs">
+          </i>
+        </a>
+      </div>
+      <div class="flex flex-col md:flex-row md:gap-8">
+        <div class="md:flex-[0_0_55%] mb-6 md:mb-0 relative">
+          <img alt="Three astronauts in space suits standing on rocky surface with foggy background"
+            class="w-full h-[600px] object-cover" height="279"
+            src="https://storage.googleapis.com/a1aa/image/7e6bb3d1-bc34-451f-198e-89409139ce06.jpg" width="504" />
+          <button aria-label="Play video"
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full w-12 h-12 flex items-center justify-center">
+            <i class="fas fa-play text-lg ml-[2px]">
+            </i>
+          </button>
         </div>
-        <br>
-        <div class="bg-white max-w-[1200px] mx-auto flex justify-center items-center mt-12 mb-12  p-0">
-            <div class="relative flex max-w-auto w-full gap-1">
-                <img alt="Black chair with a lightbox sign that says 'THINK OUTSIDE THE BOX' in a room with blurred plant in foreground" class="object-cover w-1/4" height="400" src="https://storage.googleapis.com/a1aa/image/3a6f1b1d-7256-4b23-d08a-7c82faec0679.jpg" width="300"/>
-                <img alt="White laptop placed on a wooden table in a cafe setting with chairs and window in background" class="object-cover w-1/4" height="400" src="https://storage.googleapis.com/a1aa/image/e41b10c7-2451-430c-d943-132c9a1eaab9.jpg" width="400"/>
-                <img alt="Modern desktop computer setup on a white desk with a camera and a small plant near a window" class="object-cover w-1/4" height="400" src="https://storage.googleapis.com/a1aa/image/b22a9be6-8ab5-4674-84c1-c0646d04705b.jpg" width="400"/>
-                <img alt="Close-up of hands typing on a laptop keyboard with blurred background" class="object-cover w-1/4" height="400" src="https://storage.googleapis.com/a1aa/image/70c9a00e-7238-4a6c-85e4-4f22b87b1e4a.jpg" width="300"/>
-                <div aria-label="Follow us on Instagram" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-700 rounded-full w-20 h-20 flex flex-col justify-center items-center cursor-pointer">
-                    <i class="fab fa-instagram text-white text-xl">
-                    </i>
-                    <span class="text-white text-xs mt-1">
-                    Follow us
-                    </span>
-                </div>
-            </div>
+        <div class="md:flex-[0_0_45%] flex flex-col justify-between">
+          <h3 class="text-[40px] leading-tight font-normal mb-0">
+            Axiom Space Refines Training for Next Astronauts Mission
+          </h3>
+          <div class="flex gap-6 text-[15px] leading-[1.3] text-black/80">
+            <p class="flex-1">
+              <span class="font-black text-4xl leading-none mr-1 align-top">
+                A
+              </span>
+              n American company that organises visits to the International Space Station.
+              Houston-based Axiom has signed a memorandum of understanding with the UK Space Agency to try to make it
+              happen.
+              The project would probably cost £200m or more, but the idea is that it would be funded commercially. There
+              would be no contribution from UK taxpayers. Axiom told the BBC that conversations with corporations and
+              institutions interested in providing finance were already under way.
+            </p>
+            <p class="flex-1">
+              The last UK individual to go into orbit was Tim Peake, who flew to the ISS as a European Space Agency
+              (Esa) astronaut in 2015.
+              "This is an exciting opportunity and actually unique," he commented. "No-one has done a 'national
+              mission', commercially, like this before. It's a new model and would be paving the way for how we do space
+              in the future."
+              Details are sparse at the moment. No crew has been chosen, nor is there a concept yet for how it would be
+              selected.
+            </p>
+          </div>
+          <div class="flex justify-between text-[15px] mt-4 text-black/80">
+            <span>
+              Space and Universe | 9 mins read
+            </span>
+            <a class="font-bold hover:underline" href="#">
+              Continue Reading...
+            </a>
+          </div>
         </div>
-        <!-- start footer -->
-        <!-- start footer -->
-        <footer class="bg-black relative">
-            <div class="absolute inset-x-0 top-20 h-150px overflow-hidden">
-                <!-- <div class="bg-[#0013D6] flex justify-center items-center  py-12 px-4 "> -->
-                <img alt="" class="w-full object-cover " height="100" src="img/page2/Shape.png" style="height: 150px;" width="1200px"/>
-            </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="max-w-auto mx-auto py-12 px-4 relative ">
-                <form action="#" class="bg-white rounded-md max-w-6xl mx-auto flex flex-col sm:flex-row items-center gap-4 p-10">
-                    <label class="text-black text-[20px] font-normal whitespace-nowrap" for="email">
-                    Subscribe Newsletters
-                    </label>
-                    <input class="flex-grow bg-[#e5e5e5] text-xs text-black placeholder:text-black placeholder:text-opacity-50 rounded px-3 py-2 focus:outline-none" id="email" placeholder="Enter your email" type="email"/>
-                    <button class="bg-[#0026FF] text-white text-xs font-semibold px-5 py-2 rounded hover:bg-[#001fcc] transition" type="submit">
-                    Subscribe Now
-                    </button>
-                </form>
-                <div class="flex flex-col sm:flex-row justify-between items-center text-white text-[20px] mt-12 ">
-                    <div class="flex flex-wrap gap-2 sm:gap-2  justify-center sm:justify-start mb-6 sm:mb-0">
-                        <a class="hover:underline" href="#">
-                        About us
-                        </a>
-                        <a class="hover:underline" href="#">
-                        Discover
-                        </a>
-                        <a class="hover:underline" href="#">
-                        Explore
-                        </a>
-                        <a class="hover:underline" href="#">
-                        Books
-                        </a>
-                    </div>
-                    <div class="font-bold  text-3xl mb-6 sm:mb-0">
-                        Newjnest
-                    </div>
-                    <div class="flex gap-4 text-lg">
-                        <a aria-label="Facebook" class="hover:text-[#0026FF]" href="#">
-                        <i class="fab fa-facebook-f">
-                        </i>
-                        </a>
-                        <a aria-label="Twitter" class="hover:text-[#0026FF]" href="#">
-                        <i class="fab fa-twitter">
-                        </i>
-                        </a>
-                        <a aria-label="Vimeo" class="hover:text-[#0026FF]" href="#">
-                        <i class="fab fa-vimeo-v">
-                        </i>
-                        </a>
-                        <a aria-label="YouTube" class="hover:text-[#0026FF]" href="#">
-                        <i class="fab fa-youtube">
-                        </i>
-                        </a>
-                    </div>
-                </div>
-                <div class=" flex flex-col sm:flex-row justify-between text-[15px] text-white opacity-70 mt-6">
-                    <div>
-                        © 2019 LFT Media. All rights reserved
-                    </div>
-                    <div class="flex gap-4 justify-center sm:justify-end mt-2 sm:mt-0">
-                        <a class="hover:underline" href="#">
-                        Terms of Service
-                        </a>
-                        <a class="hover:underline" href="#">
-                        Privacy Policy
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <script src="newjnest.js"></script>
-    </body>
+      </div>
+    </section>
+  </div>
+  <br>
+  </br>
+  <div class="bg-gray-100 max-w-[1200px] mx-auto py-10 px-10 p-6 mt-12">
+    <header class="flex justify-between items-center mb-6">
+      <h1 class="text-black text-[36px] font-sans font-bold">
+        Viral Videos
+      </h1>
+      <a class="text-black text-[20px] font-sans font-[15px] flex items-center gap-1 hover:underline" href="#">
+        see all
+        <i class="fas fa-chevron-right text-xs">
+        </i>
+      </a>
+    </header>
+    <div class="flex flex-col md:flex-row gap-6">
+      <!-- Left large video -->
+      <div class="flex-row  md:w-[800px] relative group cursor-pointer">
+        <img alt="SpaceX rocket Starship prototype standing vertically on launch pad with blue sky background"
+          class="w-full h-auto object-cover" height="400"
+          src="https://storage.googleapis.com/a1aa/image/0c361698-6737-4a3d-3e5e-0a3decd26db0.jpg" width="400" />
+        <button aria-label="Play video"
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-30 rounded-full p-4 group-hover:bg-opacity-50 transition">
+          <i class="fas fa-play text-white text-xl drop-shadow-lg">
+          </i>
+        </button>
+        <h2
+          class="absolute bottom-12 mb-20 left-4 right-4 text-white font-sans font-semibold text-[28px] leading-snug drop-shadow-lg">
+          SpaceX Fuels Up Starship in Key Test Ahead of 2nd-Ever
+        </h2>
+        <p class="mt-0 text-[15px] font-sans italic text-gray-700 max-w-full">
+          SpaceX's latest Starship prototype just passed another big preflight test. The company conducted a "well...
+          <span class="font-semibold ">
+            Read more
+          </span>
+        </p>
+      </div>
+      <!-- Right side videos list -->
+      <div class="flex flex-col gap-4 ">
+        <!-- Repeat 3 times -->
+        <article class="flex gap-3">
+          <div class="relative flex-shrink-0 w-[56%] cursor-pointer group">
+            <img alt="Man and woman outdoors, woman wearing VR headset, man looking on, green field background"
+              class="w-full h-[180px] object-cover" height="90"
+              src="https://storage.googleapis.com/a1aa/image/1e9f6744-acf9-4ab0-59eb-dc006eb04682.jpg" width="160" />
+            <button aria-label="Play video"
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-30 rounded-full p-2 group-hover:bg-opacity-50 transition">
+              <i class="fas fa-play text-white text-sm drop-shadow-lg">
+              </i>
+            </button>
+          </div>
+          <div class="flex flex-col justify-start text-[14px] font-sans text-black">
+            <h3 class="font-semibold leading-tight text-[20px]">
+              Meta Quest's Best VR Travel Experience Gets New Locations &amp; AI Assistant
+            </h3>
+            <p class="mt-3 italic text-gray-700 mt-2 leading-snug max-w-full">
+              The app, available for Meta Quest and PC VR-compatible headsets, features some of the highest quality...
+              <span class="font-semibold ">
+                Read more
+              </span>
+            </p>
+          </div>
+        </article>
+        <article class="flex gap-5">
+          <div class="relative flex-shrink-0 w-[56%] cursor-pointer group">
+            <img alt="Man and woman outdoors, woman wearing VR headset, man looking on, green field background"
+              class="w-full h-[180px] object-cover" height="90"
+              src="https://storage.googleapis.com/a1aa/image/1e9f6744-acf9-4ab0-59eb-dc006eb04682.jpg" width="160" />
+            <button aria-label="Play video"
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-30 rounded-full p-2 group-hover:bg-opacity-50 transition">
+              <i class="fas fa-play text-white text-sm drop-shadow-lg">
+              </i>
+            </button>
+          </div>
+          <div class="flex flex-col justify-start text-[14px] font-sans text-black">
+            <h3 class=" font-semibold leading-tight text-[20px]">
+              Meta Quest's Best VR Travel Experience Gets New Locations &amp; AI Assistant
+            </h3>
+            <p class="mt-3 italic text-gray-700 mt-2 leading-snug max-w-full">
+              The app, available for Meta Quest and PC VR-compatible headsets, features some of the highest quality...
+              <span class="font-semibold ">
+                Read more
+              </span>
+            </p>
+          </div>
+        </article>
+        <article class="flex gap-3">
+          <div class="relative flex-shrink-0 w-[56%] cursor-pointer group">
+            <img alt="Man and woman outdoors, woman wearing VR headset, man looking on, green field background"
+              class="w-full h-[150px] object-cover" height="90"
+              src="https://storage.googleapis.com/a1aa/image/1e9f6744-acf9-4ab0-59eb-dc006eb04682.jpg" width="160" />
+            <button aria-label="Play video"
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-30 rounded-full p-2 group-hover:bg-opacity-50 transition">
+              <i class="fas fa-play text-white text-sm drop-shadow-lg">
+              </i>
+            </button>
+          </div>
+          <div class="flex flex-col justify-start text-[14px] font-sans text-black">
+            <h3 class="font-semibold leading-tight text-[20px]">
+              Meta Quest's Best VR Travel Experience Gets New Locations &amp; AI Assistant
+            </h3>
+            <p class="mt-3 italic text-gray-700 mt-1 leading-snug max-w-full">
+              The app, available for Meta Quest and PC VR-compatible headsets, features some of the highest quality...
+              <span class="font-semibold ">
+                Read more
+              </span>
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="bg-white max-w-[1200px] mx-auto flex justify-center items-center mt-12 mb-12  p-0">
+    <div class="relative flex max-w-auto w-full gap-1">
+      <img
+        alt="Black chair with a lightbox sign that says 'THINK OUTSIDE THE BOX' in a room with blurred plant in foreground"
+        class="object-cover w-1/4" height="400"
+        src="https://storage.googleapis.com/a1aa/image/3a6f1b1d-7256-4b23-d08a-7c82faec0679.jpg" width="300" />
+      <img alt="White laptop placed on a wooden table in a cafe setting with chairs and window in background"
+        class="object-cover w-1/4" height="400"
+        src="https://storage.googleapis.com/a1aa/image/e41b10c7-2451-430c-d943-132c9a1eaab9.jpg" width="400" />
+      <img alt="Modern desktop computer setup on a white desk with a camera and a small plant near a window"
+        class="object-cover w-1/4" height="400"
+        src="https://storage.googleapis.com/a1aa/image/b22a9be6-8ab5-4674-84c1-c0646d04705b.jpg" width="400" />
+      <img alt="Close-up of hands typing on a laptop keyboard with blurred background" class="object-cover w-1/4"
+        height="400" src="https://storage.googleapis.com/a1aa/image/70c9a00e-7238-4a6c-85e4-4f22b87b1e4a.jpg"
+        width="300" />
+      <div aria-label="Follow us on Instagram"
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-700 rounded-full w-20 h-20 flex flex-col justify-center items-center cursor-pointer">
+        <i class="fab fa-instagram text-white text-xl">
+        </i>
+        <span class="text-white text-xs mt-1">
+          Follow us
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- start footer -->
+  <!-- start footer -->
+  <footer class="bg-black relative">
+    <div class="absolute inset-x-0 top-20 h-150px overflow-hidden">
+      <!-- <div class="bg-[#0013D6] flex justify-center items-center  py-12 px-4 "> -->
+      <img alt="" class="w-full object-cover " height="100" src="img/page2/Shape.png" style="height: 150px;"
+        width="1200px" />
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="max-w-auto mx-auto py-12 px-4 relative ">
+      <form action="#" class="bg-white rounded-md max-w-6xl mx-auto flex flex-col sm:flex-row items-center gap-4 p-10">
+        <label class="text-black text-[20px] font-normal whitespace-nowrap" for="email">
+          Subscribe Newsletters
+        </label>
+        <input
+          class="flex-grow bg-[#e5e5e5] text-xs text-black placeholder:text-black placeholder:text-opacity-50 rounded px-3 py-2 focus:outline-none"
+          id="email" placeholder="Enter your email" type="email" />
+        <button class="bg-[#0026FF] text-white text-xs font-semibold px-5 py-2 rounded hover:bg-[#001fcc] transition"
+          type="submit">
+          Subscribe Now
+        </button>
+      </form>
+      <div class="flex flex-col sm:flex-row justify-between items-center text-white text-[20px] mt-12 ">
+        <div class="flex flex-wrap gap-2 sm:gap-2  justify-center sm:justify-start mb-6 sm:mb-0">
+          <a class="hover:underline" href="#">
+            About us
+          </a>
+          <a class="hover:underline" href="#">
+            Discover
+          </a>
+          <a class="hover:underline" href="#">
+            Explore
+          </a>
+          <a class="hover:underline" href="#">
+            Books
+          </a>
+        </div>
+        <div class="font-bold  text-3xl mb-6 sm:mb-0">
+          Newjnest
+        </div>
+        <div class="flex gap-4 text-lg">
+          <a aria-label="Facebook" class="hover:text-[#0026FF]" href="#">
+            <i class="fab fa-facebook-f">
+            </i>
+          </a>
+          <a aria-label="Twitter" class="hover:text-[#0026FF]" href="#">
+            <i class="fab fa-twitter">
+            </i>
+          </a>
+          <a aria-label="Vimeo" class="hover:text-[#0026FF]" href="#">
+            <i class="fab fa-vimeo-v">
+            </i>
+          </a>
+          <a aria-label="YouTube" class="hover:text-[#0026FF]" href="#">
+            <i class="fab fa-youtube">
+            </i>
+          </a>
+        </div>
+      </div>
+      <div class=" flex flex-col sm:flex-row justify-between text-[15px] text-white opacity-70 mt-6">
+        <div>
+          © 2019 LFT Media. All rights reserved
+        </div>
+        <div class="flex gap-4 justify-center sm:justify-end mt-2 sm:mt-0">
+          <a class="hover:underline" href="#">
+            Terms of Service
+          </a>
+          <a class="hover:underline" href="#">
+            Privacy Policy
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="newjnest.js"></script>
+</body>
+
 </html>
 <!-- end footer -->
