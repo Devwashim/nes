@@ -1,0 +1,142 @@
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>
+        Govt. Schemes
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<nav class="border-gray-200 bg-[#001f7f]">
+    <div class="w-full flex flex-wrap items-center justify-between mx-auto  p-3 px-12">
+        <span class="self-center text-2xl font-semibold whitespace-nowrap text-yellow-400">Newjnest</span>
+        </a>
+        <div class="flex md:order-2 gap-3">
+            <!--  search button  -->
+            <div class="w-[500px] relative hidden md:block">
+                <div class="absolute inset-y-0 end-2 flex items-center ps-3 pointer-events- gap-3">
+                    <button aria-label="Search"><i class="fas fa-search w-4 h-4 text-gray-500 text-gray-400"
+                            aria-hidden="true"></i></button>
+                    <button aria-label="Filter"><i class="fas fa-filter w-4 h-4 text-gray-500 text-gray-400 "
+                            aria-hidden="true"></i></button>
+                    <span class="sr-only">Search icon</span>
+                </div>
+                <input type="text" id="search-navbar"
+                    class="block w-full p-2 ps-5 text-sm text-black border border-black rounded-sm bg-white focus:ring-blue-500 focus:border-blue-500 bg-white placeholder-black text-black focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="What are you looking for?">
+            </div>
+            <button data-collapse-toggle="navbar" type="button" class="inline-flex items-center p-2 w-15 h-10 justify-center text-sm text-gray-400
+                rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 
+                focus:ring-gray-200 text-gray-400 hover:bg-blue-700 focus:ring-gray-600" aria-controls="navbar-search"
+                aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5 flo" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <button aria-label="Select country"
+                class="flex items-center border border-gray-300 rounded px-2 py-1 my-auto  hover:bg-gray-100 transition">
+                <img alt="Indian flag placeholder with , white and green horizontal stripes and blue chakra in center"
+                    class="object-cover" height="15" src="" width="24" />
+                <i class="fas fa-caret-down text-gray-600 ml-1 text-xs"></i>
+            </button>
+            <button aria-label="Toggle dark mode" class="bg-black rounded-full px-3 py-2  hover:bg-gray-800 transition">
+                <i class="fas fa-moon text-white text-sm"></i>
+            </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+            <div class="relative mt-3 md:hidden">
+                <div class="absolute inset-y-0 end-2 flex items-center ps-3 pointer-events- gap-3">
+                    <button aria-label="Search"><i class="fas fa-search w-4 h-4 text-gray-500 text-gray-400"
+                            aria-hidden="true"></i></button>
+                    <button aria-label="Filter"><i class="fas fa-filter w-4 h-4 text-gray-500 text-gray-400 "
+                            aria-hidden="true"></i></button>
+                </div>
+                <input type="text" id="search-navbar"
+                    class="block w-full p-2 ps-5 text-sm text-black border border-black rounded-sm bg-white focus:ring-blue-500 focus:border-blue-500 bg-white placeholder-black text-black focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="What are you looking for?">
+            </div>
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border
+                border-gray-100 rounded-lg bg-blue-700 md:space-x-8
+                rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 
+                md:bg-blue-700 bg-gray-800 md:bg-gray-900 border-gray-700">
+            </ul>
+        </div>
+    </div>
+    <navbar class="items-center justify-center w-full bg-[#050663] hidden w-full md:flex md:w-auto md:order-1 py-2"
+        id="navbar">
+        <div class="relative mt-3 md:hidden">
+            <div class="absolute inset-y-0 end-2 flex items-center ps-3 pointer-events- gap-3">
+                <button aria-label="Search"><i class="fas fa-search w-4 h-4 text-gray-500 text-gray-400"
+                        aria-hidden="true"></i></button>
+                <button aria-label="Filter"><i class="fas fa-filter w-4 h-4 text-gray-500 text-gray-400 "
+                        aria-hidden="true"></i></button>
+            </div>
+            <input type="text" id="search-navbar" class="block w-full p-2 ps-5 text-sm text-black border border-black 
+                rounded-sm  focus:ring-blue-500 focus:border-blue-500 
+                placeholder-black text-black focus:ring-blue-500 
+                focus:border-blue-500" placeholder="What are you looking for?">
+        </div>
+        <ul class="flex flex-col p-4  md:p-0 mt-4 font-medium border 
+            border-0 rounded-lg  md:space-x-8 rtl:space-x-reverse 
+            md:flex-row md:mt-0 md:border-0 
+            border-gray-700">
+            <li>
+                <a href="#" class="block py-2 px-3 text-white bg-blue-700
+                    rounded-sm md:bg-transparent md:text-yellow-400  md:p-0 
+                    md:text-blue-500" aria-current="page">Home</a>
+            </li>
+            <li>
+                <a href="#" class="block py-2 px-3 text-white-900 
+                    rounded-sm hover:bg-white md:hover:bg-transparent 
+                    md:hover:text-yellow-400 md:p-0 md:hover:text-blue-500 
+                    text-white hover:bg-blue-700 hover:text-black 
+                    md:hover:bg-transparent border-gray-700">Stories</a>
+            </li>
+            <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm 
+                    hover:bg-white md:hover:bg-transparent
+                    md:hover:text-yellow-400  md:p-0 text-white
+                    md:hover:text-blue-500 hover:bg-gray-700
+                    hover:text-black md:hover:bg-transparent 
+                    border-gray-700">Funding Guide</a>
+            </li>
+            <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm 
+                    hover:bg-white md:hover:bg-transparent
+                    md:hover:text-yellow-400  md:p-0 text-white
+                    md:hover:text-blue-500 hover:bg-gray-700
+                    hover:text-black md:hover:bg-transparent 
+                    border-gray-700">Govt. Schemes</a>
+            </li>
+            <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm 
+                    hover:bg-white md:hover:bg-transparent
+                    md:hover:text-yellow-400  md:p-0 text-white
+                    md:hover:text-blue-500 hover:bg-gray-700
+                    hover:text-black md:hover:bg-transparent 
+                    border-gray-700">Legal Advice</a>
+            </li>
+            <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm 
+                    hover:bg-white md:hover:bg-transparent
+                    md:hover:text-yellow-400  md:p-0 text-white
+                    md:hover:text-blue-500 hover:bg-gray-700
+                    hover:text-black md:hover:bg-transparent 
+                    border-gray-700">Experts Express</a>
+            </li>
+        </ul>
+        </div>
+    </navbar>
+</nav>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+</script>
+</body>
